@@ -15,3 +15,37 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Intro text, name: intro, widget: text}
           - {label: Image, name: image, widget: image}
+      - label: "About"
+        name: "about"
+        file: "content/about.md"
+        fields: 
+          - {label: Contact, name: contact, widget: text}
+          - {label: Hours, name: hours, widget: text}
+  - label: "Historical Postcards"
+    name: "history"
+    folder: "content/history"
+    file: "content/history/postcards.md"
+    create: true
+    fields: 
+      - {label: Image, name: image, widget: image}
+      - {label: Description, name: description, widget: string}
+  - label: "Gallery"
+    name: "gallery"
+    folder: "content/gallery"
+    file: "content/gallery/image.md"
+    create: true
+    fields: 
+      - {label: Image, name: image, widget: image}
+      - {label: Description, name: description, widget: string}
+  - label: "Menu"
+    name: "menu"
+    folder: "content/menu" 
+    file: "content/menu/item.md" 
+    create: true
+    fields:
+      - {label: Category, name: category, widget: list, default: ["Box", "Platter"]}
+      - {label: Price, name: price, widget: number}
+      - {label: Name, name: name, widget: string}
+      - {label: Small Price, name: small_price, widget: number}
+      - {label: Medium Price, name: medium_price, widget: number}
+      - {label: Large Price, name: large_price, widget: number}
