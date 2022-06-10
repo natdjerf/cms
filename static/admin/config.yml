@@ -1,51 +1,124 @@
-backend: 
-    name: github
-    repo: natdjerf/cms
+backend:
+  name: github
+  repo: natdjerf/cms
 
 media_folder: static/assets
 public_folder: assets
-collections: 
+collections:
   - label: "Pages"
     name: "pages"
     files:
       - label: "Home Page"
         name: "home"
         file: "content/home.md"
-        fields: 
-          - {label: Title, name: title, widget: string}
-          - {label: Intro text, name: intro, widget: text}
-          - {label: Image, name: image, widget: image}
+        fields:
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Section welcome header,
+              name: section_welcome_header,
+              widget: string,
+            }
+          - {
+              label: Section welcome text,
+              name: section_welcome_text,
+              widget: text,
+            }
+          - {
+              label: Section food header,
+              name: section_food_header,
+              widget: string,
+            }
+          - { label: Section food text, name: section_food_text, widget: text }
+          - {
+              label: Section family header,
+              name: section_family_header,
+              widget: string,
+            }
+          - {
+              label: Section family text,
+              name: section_family_text,
+              widget: text,
+            }
+          - {
+              label: Section favorites header,
+              name: section_favorites_header,
+              widget: string,
+            }
+          - {
+              label: Section favorites seafood,
+              name: section_favorites_seafood,
+              widget: text,
+            }
+          - {
+              label: Section favorites griddle,
+              name: section_favorites_griddle,
+              widget: text,
+            }
+          - {
+              label: Section favorites beverages,
+              name: section_favorites_beverages,
+              widget: text,
+            }
       - label: "About"
         name: "about"
         file: "content/about.md"
-        fields: 
-          - {label: Contact, name: contact, widget: text}
-          - {label: Hours, name: hours, widget: text}
+        fields:
+          - {
+              label: Hours,
+              name: hours,
+              widget: string,
+              hint: "As text: 10:30am to 10:00pm",
+            }
+          - {
+              label: Hours description,
+              name: hours_description,
+              widget: string,
+              hint: "Open daily...",
+            }
+          - {
+              label: Address line 1,
+              name: address_line_1,
+              widget: string,
+              hint: "Street number and name",
+            }
+          - {
+              label: Address line 2,
+              name: address_line_2,
+              widget: string,
+              hint: "City, state, zip",
+            }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
   - label: "Historical Postcards"
     name: "history"
     folder: "content/history"
     file: "content/history/postcards.md"
     create: true
-    fields: 
-      - {label: Image, name: image, widget: image}
-      - {label: Description, name: description, widget: string}
+    fields:
+      - { label: Image, name: image, widget: image }
+      - { label: Description, name: description, widget: string }
   - label: "Gallery"
     name: "gallery"
     folder: "content/gallery"
     file: "content/gallery/image.md"
     create: true
-    fields: 
-      - {label: Image, name: image, widget: image}
-      - {label: Description, name: description, widget: string}
+    fields:
+      - { label: Image, name: image, widget: image }
+      - { label: Description, name: description, widget: string }
   - label: "Menu"
     name: "menu"
-    folder: "content/menu" 
-    file: "content/menu/item.md" 
+    folder: "content/menu"
+    file: "content/menu/item.md"
     create: true
     fields:
-      - {label: Category, name: category, widget: list, default: ["Box", "Platter"]}
-      - {label: Price, name: price, widget: number}
-      - {label: Name, name: name, widget: string}
-      - {label: Small Price, name: small_price, widget: number}
-      - {label: Medium Price, name: medium_price, widget: number}
-      - {label: Large Price, name: large_price, widget: number}
+      - {
+          label: Category,
+          name: category,
+          widget: list,
+          default: ["Box", "Platter"],
+        }
+      - { label: Price, name: price, widget: number }
+      - { label: Name, name: name, widget: string }
+      - { label: Small Price, name: small_price, widget: number }
+      - { label: Medium Price, name: medium_price, widget: number }
+      - { label: Large Price, name: large_price, widget: number }
