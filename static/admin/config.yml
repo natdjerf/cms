@@ -14,6 +14,32 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - {
+              label: Hours,
+              name: hours,
+              widget: string,
+              hint: "As text: 10:30am to 10:00pm",
+            }
+          - {
+              label: Hours description,
+              name: hours_description,
+              widget: string,
+              hint: "Open daily...",
+            }
+          - {
+              label: Address line 1,
+              name: address_line_1,
+              widget: string,
+              hint: "Street number and name",
+            }
+          - {
+              label: Address line 2,
+              name: address_line_2,
+              widget: string,
+              hint: "City, state, zip",
+            }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
+          - {
               label: Section welcome header,
               name: section_welcome_header,
               widget: string,
@@ -59,36 +85,6 @@ collections:
               name: section_favorites_beverages,
               widget: text,
             }
-      - label: "About"
-        name: "about"
-        file: "content/about.md"
-        fields:
-          - {
-              label: Hours,
-              name: hours,
-              widget: string,
-              hint: "As text: 10:30am to 10:00pm",
-            }
-          - {
-              label: Hours description,
-              name: hours_description,
-              widget: string,
-              hint: "Open daily...",
-            }
-          - {
-              label: Address line 1,
-              name: address_line_1,
-              widget: string,
-              hint: "Street number and name",
-            }
-          - {
-              label: Address line 2,
-              name: address_line_2,
-              widget: string,
-              hint: "City, state, zip",
-            }
-          - { label: Phone, name: phone, widget: string }
-          - { label: Email, name: email, widget: string }
   - label: "Historical Postcards"
     name: "history"
     folder: "content/history"
