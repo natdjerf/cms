@@ -99,8 +99,7 @@ collections:
     file: "content/gallery/image.md"
     create: true
     fields:
-      - { label: Image, name: image, widget: image }
-      - { label: Description, name: description, widget: string }
+      - { label: Image, name: landing_image, widget: image }
   - label: "Menu"
     name: "menu"
     folder: "content/menu"
@@ -118,3 +117,9 @@ collections:
       - { label: Small Price, name: small_price, widget: number }
       - { label: Medium Price, name: medium_price, widget: number }
       - { label: Large Price, name: large_price, widget: number }
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dpanbsxt4
+    api_key: 927844834554744
+  output_filename_only: true
