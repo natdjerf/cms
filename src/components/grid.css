@@ -1,0 +1,52 @@
+.layout {
+  display: grid;
+  grid-template-rows: 120px 500px 300px;
+  justify-content: center;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  gap: 30px;
+  grid-area: main;
+  grid-template-columns: repeat(12, 72px);
+  grid-template-rows: repeat(6, maxcontent);
+  grid-template-areas:
+    "landing"
+    "hours"
+    "welcome"
+    "finest"
+    "favorites"
+    "family";
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.landing {
+  grid-area: landing;
+}
+.hours {
+  grid-area: hours;
+}
+.welcome {
+  grid-area: welcome;
+}
+.finest {
+  grid-area: finest;
+}
+.favorites {
+  grid-area: favorites;
+}
+.family {
+  grid-area: family;
+}

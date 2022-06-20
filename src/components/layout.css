@@ -9,22 +9,17 @@ body {
   font-family: "Gentle";
 }
 
-.layout {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(12, 72px);
-  justify-content: center;
-  grid-template-rows: 120px max-content 300px;
+.h1 {
+  font-family: "Gentle";
+  font-size: 60px;
 }
 
-.header {
-  grid-row: 1;
+.h2 {
+  font-family: "Gentle";
+  font-size: 36px;
 }
 
-.main {
-  grid-row: 2;
-}
-
-.footer {
-  grid-row: 3;
+.h2 {
+  font-family: "Gentle";
+  font-size: 36px;
 }
