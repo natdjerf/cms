@@ -2,13 +2,12 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { Navigation } from "./navigation"
+import "./layout.css"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div>
-      <Navigation></Navigation>
-      <h1 className="headline">Tony's Clam Shop</h1>
-    </div>
+    <Navigation></Navigation>
+    <h1 className="h1">{siteTitle}</h1>
   </header>
 )
 

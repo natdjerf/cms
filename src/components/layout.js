@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import "@fontsource/raleway"
 
 import Header from "./header"
@@ -26,12 +26,13 @@ const Layout = ({ children }) => {
 
   return (
     <div className="layout">
-      <Header
-        className="header"
-        siteTitle={data.site.siteMetadata?.title || `Title`}
-      />
+      <div className="header">
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      </div>
       <main className="main">{children}</main>
-      <footer className="footer">Footer</footer>
+      <div className="footer">
+        <footer>Footer</footer>
+      </div>
     </div>
   )
 }

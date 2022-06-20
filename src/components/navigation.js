@@ -4,20 +4,23 @@ import { Link } from "gatsby"
 export const Navigation = () => {
   return (
     <nav>
-      <ul>
-        <li>
-          <Link to="/logo/"></Link>
-        </li>
-        <li>
-          <Link to="/history/">Menu</Link>
-        </li>
-        <li>
-          <Link to="/visit/">Visit</Link>
-        </li>
-        <li>
-          <Link to="/history/">Gallery</Link>
-        </li>
-      </ul>
+      <div className="logo">
+        LOGO
+        <Link to="/logo/"></Link>
+      </div>
+      <div className="navigation">
+        <ul>
+          <li className="nav_header">
+            <Link to="/history/">Menu</Link>
+          </li>
+          <li className="nav_header">
+            <Link to="/visit/">Visit</Link>
+          </li>
+          <li className="nav_header">
+            <Link to="/history/">Gallery</Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   )
 }
