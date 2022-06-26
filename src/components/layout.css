@@ -5,8 +5,13 @@ body {
   font-family: "Raleway";
   font-weight: 400;
 }
+
 .headline {
   font-family: "Gentle";
+}
+
+.extraBold {
+  font-weight: 800;
 }
 
 .h1 {
@@ -22,4 +27,128 @@ body {
 .h2 {
   font-family: "Gentle";
   font-size: 36px;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.normal {
+  font-style: normal;
+}
+
+.block {
+  display: block;
+}
+
+.marginNav {
+  margin-right: 30px;
+}
+
+.marginNavOffset {
+  margin-right: -30px;
+}
+
+.landing {
+  background: url("https://res.cloudinary.com/dpanbsxt4/image/upload/v1655754218/Landing_Crop_ipfwta.png");
+  background-size: cover;
+  margin-top: -60px;
+  min-height: 90vh;
+}
+
+.sticky {
+  /* background: transparent; */
+  position: sticky;
+  /* top: 0; */
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifySpaceBetween {
+  justify-content: space-between;
+}
+
+.padding {
+  padding: 4.5rem;
+}
+
+.paddingMin {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.paddingTop {
+  padding-top: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.section--text {
+  flex: 1 0;
+}
+
+.maxWidth {
+  max-width: 82rem;
+}
+
+.fullvW {
+  width: 100vw;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.gr {
+  display: grid;
+}
+
+.gc {
+  justify-items: center;
+}
+
+.g50 {
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  row-gap: 3.5rem;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr [col-end]);
+  column-gap: 30px;
+}
+
+.fullWidth {
+  grid-column: 2 col-start / 11 col-end;
+}
+
+.leftThird {
+  grid-column: 1 col-start / 4 col-end;
+}
+
+.centerThird {
+  grid-column: 5 col-start / 8 col-end;
+}
+
+.rightThird {
+  grid-column: 9 col-start / 12 col-end;
 }

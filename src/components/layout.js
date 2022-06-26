@@ -8,7 +8,8 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import "@fontsource/raleway"
+import "@fontsource/raleway/400.css"
+import "@fontsource/raleway/800.css"
 
 import Header from "./header"
 import "./layout.css"
@@ -26,10 +27,8 @@ const Layout = ({ children }) => {
 
   return (
     <div className="layout">
-      <div className="header">
-        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      </div>
-      <main className="main">{children}</main>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <main className="main flexColumn alignCenter">{children}</main>
       <div className="footer">
         <footer>Footer</footer>
       </div>
