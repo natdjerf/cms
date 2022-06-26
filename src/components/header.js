@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import "./layout.css"
 
 const Header = () => (
-  <header className="sticky paddingTop paddingMin">
+  <header className="sticky paddingTopHeader paddingMin">
     <nav>
       <div className="flex alignCenter justifySpaceBetween">
         <div className="flex">
@@ -12,10 +12,10 @@ const Header = () => (
           <Link to="/logo/"></Link>
         </div>
         <div className="flex justifyEnd upperCase extraBold marginNavOffset">
-          <Link className="marginNav" to="/history/">
+          <Link className="link primary marginNav" to="/history/">
             Menu
           </Link>
-          <Link className="marginNav" to="/visit/">
+          <Link className="link primary marginNav" to="/visit/">
             Visit
           </Link>
         </div>

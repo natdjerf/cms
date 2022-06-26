@@ -1,7 +1,14 @@
 @import "../css/reset.css";
 @import "../css/typography.css";
 
+:root {
+  --background-color: rgb(255, 226, 190, 0.55);
+  --primary: #223a41;
+  --primary-color: #f16a36;
+}
+
 body {
+  color: var(--primary);
   font-family: "Raleway";
   font-weight: 400;
 }
@@ -74,17 +81,17 @@ body {
   justify-content: space-between;
 }
 
-.padding {
-  padding: 4.5rem;
-}
-
 .paddingMin {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.paddingTop {
+.paddingTopHeader {
   padding-top: 30px;
+}
+
+.paddingSection {
+  padding: 60px 0;
 }
 
 .flex {
@@ -98,10 +105,6 @@ body {
 
 .alignCenter {
   align-items: center;
-}
-
-.section--text {
-  flex: 1 0;
 }
 
 .maxWidth {
@@ -133,8 +136,11 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr [col-end]);
+  grid-template-columns:
+    calc(50vw - 39.5rem) repeat(12, [col-start] 1fr [col-end])
+    calc(50vw - 39.5rem);
   column-gap: 30px;
+  row-gap: 30px;
 }
 
 .fullWidth {
@@ -151,4 +157,75 @@ body {
 
 .rightThird {
   grid-column: 9 col-start / 12 col-end;
+}
+
+.leftHalf {
+  grid-column: 1 col-start / 6 col-end;
+}
+
+.leftHalfCenter {
+  grid-column: 2 col-start / 6 col-end;
+}
+
+.rightHalf {
+  grid-column: 7 col-start / 12 col-end;
+}
+
+.rightHalfCenter {
+  grid-column: 8 col-start / 12 col-end;
+}
+
+svg {
+  width: 10px;
+}
+
+.background {
+  background-color: var(--background-color);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.primaryColor {
+  color: var(--primary-color);
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+}
+
+.link:visited {
+  color: var(--primary);
+}
+
+.link::after {
+  bottom: -6px;
+  background-color: var(--primary-color);
+  content: "";
+  height: 2px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.link:hover::after,
+.link:focus::after {
+  opacity: 1;
+}
+
+.galleryImage {
+  width: 582px;
+  height: 398px;
+  object-fit: cover;
+}
+
+.galleryPosition {
+  object-position: 0 -4em;
+}
+
+.polaroidImage {
+  width: 582px;
 }
