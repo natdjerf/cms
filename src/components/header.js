@@ -1,6 +1,8 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import Logo from "../images/logo.inline.svg"
+
 import "./layout.css"
 
 const Header = () => (
@@ -8,8 +10,9 @@ const Header = () => (
     <nav>
       <div className="flex alignCenter justifySpaceBetween">
         <div className="flex">
-          LOGO
-          <Link to="/logo/"></Link>
+          <Link to="/">
+            <Logo className="logoIcon" />
+          </Link>
         </div>
         <div className="flex justifyEnd upperCase extraBold marginNavOffset">
           <Link className="link primary marginNav" to="/history/">

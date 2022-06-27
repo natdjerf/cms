@@ -99,7 +99,9 @@ collections:
     file: "content/gallery/image.md"
     create: true
     fields:
-      - { label: Image, name: landing_image, widget: image }
+      - { label: Image, name: image, widget: image }
+      - { label: Name, name: name, widget: string }
+      - { label: Description, name: description, widget: string }
   - label: "Menu"
     name: "menu"
     folder: "content/menu"

@@ -5,6 +5,7 @@
   --background-color: rgb(255, 226, 190, 0.55);
   --primary: #223a41;
   --primary-color: #f16a36;
+  --headerMargin: 30px;
 }
 
 body {
@@ -49,17 +50,17 @@ body {
 }
 
 .marginNav {
-  margin-right: 30px;
+  margin-right: var(--headerMargin);
 }
 
 .marginNavOffset {
-  margin-right: -30px;
+  margin-right: var(--headerMargin);
 }
 
 .landing {
   background: url("https://res.cloudinary.com/dpanbsxt4/image/upload/v1655754218/Landing_Crop_ipfwta.png");
   background-size: cover;
-  margin-top: -60px;
+  margin-top: -84px; /* margin top 30px+ nav height 54px */
   min-height: 90vh;
 }
 
@@ -82,16 +83,24 @@ body {
 }
 
 .paddingMin {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .paddingTopHeader {
   padding-top: 30px;
 }
 
+.paddingSectionSmall {
+  padding: 40px 0;
+}
+
 .paddingSection {
   padding: 60px 0;
+}
+
+.paddingSectionLarge {
+  padding: 120px;
 }
 
 .flex {
@@ -107,31 +116,12 @@ body {
   align-items: center;
 }
 
-.maxWidth {
-  max-width: 82rem;
-}
-
 .fullvW {
   width: 100vw;
 }
 
 .textCenter {
   text-align: center;
-}
-
-.gr {
-  display: grid;
-}
-
-.gc {
-  justify-items: center;
-}
-
-.g50 {
-  grid-template-columns: 50% 50%;
-  place-items: center;
-  row-gap: 3.5rem;
-  width: 100%;
 }
 
 .grid {
@@ -173,10 +163,6 @@ body {
 
 .rightHalfCenter {
   grid-column: 8 col-start / 12 col-end;
-}
-
-svg {
-  width: 10px;
 }
 
 .background {
@@ -228,4 +214,16 @@ svg {
 
 .polaroidImage {
   width: 582px;
+}
+
+.logoIcon {
+  width: 90px;
+}
+
+.marginIcon {
+  margin-top: -40px;
+}
+
+.smallGap {
+  column-gap: 5px;
 }

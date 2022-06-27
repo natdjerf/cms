@@ -1,9 +1,14 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Shrimp from "../images/shrimp.inline.svg"
+import Fries from "../images/fries.inline.svg"
+import Burger from "../images/burger.inline.svg"
+import Cutlery from "../images/cutlery.inline.svg"
+import Beer from "../images/beer.inline.svg"
+import Soda from "../images/soda.inline.svg"
 
 const Home = ({ data }) => {
   const {
-    title,
     hours,
     hours_description,
     phone = "",
@@ -28,7 +33,7 @@ const Home = ({ data }) => {
           <h1 className="h1">Tony's Clam Shop</h1>
         </div>
       </section>
-      <section className="section paddingSection">
+      <section className="section paddingSectionLarge">
         <div className="grid textCenter">
           <div className="leftThird">
             <h3 className="h3">Hours</h3>
@@ -44,10 +49,10 @@ const Home = ({ data }) => {
           </div>
           <div className="rightThird">
             <h3 className="h3">Contact</h3>
-            <a className="block" href={`mailto:${email}`}>
+            <a className="block primary" href={`mailto:${email}`}>
               {email}
             </a>
-            <a className="block" href={`tel:${phone.replace("-", "")}`}>
+            <a className="block primary" href={`tel:${phone.replace("-", "")}`}>
               {phone}
             </a>
           </div>
@@ -64,6 +69,7 @@ const Home = ({ data }) => {
               <img
                 className="polaroidImage"
                 src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/welcome_crop_yicrh1.png"
+                alt="polaroid early restaurant days"
               ></img>
             </picture>
           </div>
@@ -88,34 +94,35 @@ const Home = ({ data }) => {
               <img
                 className="polaroidImage"
                 src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/finest_crop_ei5byw.png"
+                alt="polaroid restaurant 20th anniversary"
               ></img>
             </picture>
           </div>
         </div>
       </section>
-      <section className="section paddingSection">
-        <div className="grid">
-          <h2 className="h2 fullWidth textCenter">
+      <section className="section paddingSection textCenter">
+        <div className="grid smallGap">
+          <h2 className="h2 fullWidth paddingSectionSmall">
             {section_favorites_header}
           </h2>
           <div className="leftThird">
-            <div>
-              images
-              <svg></svg>
+            <div className="flex justifyCenter paddingSectionSmall">
+              <Shrimp role="presentation" alt="" />
+              <Fries role="presentation" alt="" className="marginIcon" />
             </div>
             <p>{section_favorites_seafood}</p>
           </div>
           <div className="centerThird">
-            <div>
-              images
-              <svg></svg>
+            <div className="flex justifyCenter paddingSectionSmall">
+              <Burger role="presentation" alt="" className="marginIcon" />
+              <Cutlery role="presentation" alt="" />
             </div>
             <p>{section_favorites_griddle}</p>
           </div>
           <div className="rightThird">
-            <div>
-              images
-              <svg></svg>
+            <div className="flex justifyCenter paddingSectionSmall">
+              <Beer role="presentation" alt="" />
+              <Soda role="presentation" alt="" className="marginIcon" />
             </div>
             <p>{section_favorites_beverages}</p>
           </div>
@@ -128,7 +135,9 @@ const Home = ({ data }) => {
       </section>
       <section className="section paddingSection">
         <div className="grid alignCenter">
-          <h2 className="h2 fullWidth textCenter">{section_family_header}</h2>
+          <h2 className="h2 fullWidth textCenter paddingSectionSmall">
+            {section_family_header}
+          </h2>
           <div className="leftHalf">
             <picture>
               <source
@@ -138,6 +147,7 @@ const Home = ({ data }) => {
               <img
                 className="galleryImage"
                 src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_1_aumyy6.png"
+                alt="family"
               ></img>
             </picture>
           </div>
@@ -150,6 +160,7 @@ const Home = ({ data }) => {
               <img
                 className="galleryImage"
                 src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_2_kb7tor.png"
+                alt="family"
               ></img>
             </picture>
           </div>
@@ -162,6 +173,7 @@ const Home = ({ data }) => {
               <img
                 className="galleryImage galleryPosition"
                 src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1656265482/family_3_vtg1ri.png"
+                alt="family"
               ></img>
             </picture>
           </div>
