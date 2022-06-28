@@ -29,11 +29,11 @@ const Home = ({ data }) => {
   return (
     <>
       <section className="section landing fullvW">
-        <div className="flex justifyCenter paddingTopHeader">
-          <h1 className="h1">Tony's Clam Shop</h1>
+        <div className="flex justifyCenter paddingTop30">
+          <h1 className="h1 textCenter">Tony's Clam Shop</h1>
         </div>
       </section>
-      <section className="section paddingSectionLarge">
+      <section className="section paddingTop120 paddingBottom120">
         <div className="grid textCenter">
           <div className="leftThird">
             <h3 className="h3">Hours</h3>
@@ -58,9 +58,9 @@ const Home = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="section paddingSection background">
-        <div className="grid alignCenter">
-          <div className="leftHalf">
+      <section className="section paddingTop60 background">
+        <div className="grid alignCenter textCenter textLeftMedia">
+          <div className="leftHalf orderMedia">
             <picture>
               <source
                 media="(min-width: 200px)"
@@ -75,15 +75,15 @@ const Home = ({ data }) => {
           </div>
           <div className="rightHalfCenter">
             <h2 className="h2">{section_welcome_header}</h2>
-            <p>{section_welcome_text}</p>
+            <p className="paddingTop30">{section_welcome_text}</p>
           </div>
         </div>
       </section>
-      <section className="section paddingSection background">
-        <div className="grid alignCenter">
+      <section className="section paddingTop60 paddingBottom60 background">
+        <div className="grid alignCenter textCenter textLeftMedia">
           <div className="leftHalfCenter">
             <h2 className="h2">{section_food_header}</h2>
-            <p>{section_food_text}</p>
+            <p className="paddingTop30">{section_food_text}</p>
           </div>
           <div className="rightHalf">
             <picture>
@@ -100,44 +100,70 @@ const Home = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="section paddingSection textCenter">
+      <section className="section paddingTop60 textCenter">
         <div className="grid smallGap">
-          <h2 className="h2 fullWidth paddingSectionSmall">
+          <h2 className="h2 fullWidth paddingTop40">
             {section_favorites_header}
           </h2>
           <div className="leftThird">
-            <div className="flex justifyCenter paddingSectionSmall">
+            <div className="flex justifyCenter paddingTop60">
               <Shrimp role="presentation" alt="" />
               <Fries role="presentation" alt="" className="marginIcon" />
             </div>
-            <p>{section_favorites_seafood}</p>
+            <p className="paddingTop30">{section_favorites_seafood}</p>
           </div>
           <div className="centerThird">
-            <div className="flex justifyCenter paddingSectionSmall">
+            <div className="flex justifyCenter paddingTop60">
               <Burger role="presentation" alt="" className="marginIcon" />
               <Cutlery role="presentation" alt="" />
             </div>
-            <p>{section_favorites_griddle}</p>
+            <p className="paddingTop30">{section_favorites_griddle}</p>
           </div>
           <div className="rightThird">
-            <div className="flex justifyCenter paddingSectionSmall">
+            <div className="flex justifyCenter paddingTop60">
               <Beer role="presentation" alt="" />
               <Soda role="presentation" alt="" className="marginIcon" />
             </div>
-            <p>{section_favorites_beverages}</p>
+            <p className="paddingTop30">{section_favorites_beverages}</p>
           </div>
-          <div className="fullWidth textCenter extraBold upperCase ">
+          <div className="fullWidth textCenter extraBold upperCase paddingTop30">
             <Link className="link primaryColor" to="/visit/">
               View Menu
             </Link>
           </div>
         </div>
       </section>
-      <section className="section paddingSection">
+      <section className="section paddingTop60">
         <div className="grid alignCenter">
-          <h2 className="h2 fullWidth textCenter paddingSectionSmall">
+          <h2 className="h2 fullWidth textCenter paddingTop40">
             {section_family_header}
           </h2>
+          <div className="leftHalf">
+            <picture>
+              <source
+                media="(min-width: 100px)"
+                srcset="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_2_kb7tor.png"
+              />
+              <img
+                className="galleryImage"
+                src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_2_kb7tor.png"
+                alt="family"
+              ></img>
+            </picture>
+          </div>
+          <div className="rightHalf">
+            <picture>
+              <source
+                media="(min-width: 100px)"
+                srcset="https://res.cloudinary.com/dpanbsxt4/image/upload/v1656265482/family_3_vtg1ri.png"
+              />
+              <img
+                className="galleryImage galleryPosition"
+                src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1656265482/family_3_vtg1ri.png"
+                alt="family"
+              ></img>
+            </picture>
+          </div>
           <div className="leftHalf">
             <picture>
               <source
@@ -151,33 +177,9 @@ const Home = ({ data }) => {
               ></img>
             </picture>
           </div>
-          <div className="rightHalf">
-            <picture>
-              <source
-                media="(min-width: 100px)"
-                srcset="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_2_kb7tor.png"
-              />
-              <img
-                className="galleryImage"
-                src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_2_kb7tor.png"
-                alt="family"
-              ></img>
-            </picture>
-          </div>
-          <div className="leftHalf">
-            <picture>
-              <source
-                media="(min-width: 100px)"
-                srcset="https://res.cloudinary.com/dpanbsxt4/image/upload/v1656265482/family_3_vtg1ri.png"
-              />
-              <img
-                className="galleryImage galleryPosition"
-                src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1656265482/family_3_vtg1ri.png"
-                alt="family"
-              ></img>
-            </picture>
-          </div>
-          <p className="rightHalf">{section_family_text}</p>
+          <p className="rightHalf textCenter textLeftMedia">
+            {section_family_text}
+          </p>
         </div>
       </section>
     </>

@@ -6,7 +6,7 @@ import Logo from "../images/logo.inline.svg"
 import "./layout.css"
 
 const Header = () => (
-  <header className="sticky paddingTopHeader paddingMin">
+  <header className="sticky paddingTop30 paddingMin">
     <nav>
       <div className="flex alignCenter justifySpaceBetween">
         <div className="flex">

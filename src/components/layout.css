@@ -8,6 +8,8 @@
   --headerMargin: 30px;
 }
 
+/* Text */
+
 body {
   color: var(--primary);
   font-family: "Raleway";
@@ -45,6 +47,12 @@ body {
   font-style: normal;
 }
 
+.textCenter {
+  text-align: center;
+}
+
+/*  Position */
+
 .block {
   display: block;
 }
@@ -60,6 +68,7 @@ body {
 .landing {
   background: url("https://res.cloudinary.com/dpanbsxt4/image/upload/v1655754218/Landing_Crop_ipfwta.png");
   background-size: cover;
+  background-position: 15%;
   margin-top: -84px; /* margin top 30px+ nav height 54px */
   min-height: 90vh;
 }
@@ -70,16 +79,12 @@ body {
   /* top: 0; */
 }
 
-.justifyCenter {
-  justify-content: center;
+.paddingBottom60 {
+  padding-bottom: 60px;
 }
 
-.justifyEnd {
-  justify-content: flex-end;
-}
-
-.justifySpaceBetween {
-  justify-content: space-between;
+.paddingBottom120 {
+  padding-bottom: 120px;
 }
 
 .paddingMin {
@@ -87,21 +92,27 @@ body {
   padding-right: 20px;
 }
 
-.paddingTopHeader {
+.paddingTop30 {
   padding-top: 30px;
 }
 
-.paddingSectionSmall {
-  padding: 40px 0;
+.paddingTop40 {
+  padding-top: 40px;
 }
 
-.paddingSection {
-  padding: 60px 0;
+.paddingTop60 {
+  padding-top: 60px;
 }
 
-.paddingSectionLarge {
-  padding: 120px;
+.paddingTop120 {
+  padding-top: 120px;
 }
+
+.fullvW {
+  width: 100vw;
+}
+
+/* Grid / Flex */
 
 .flex {
   display: flex;
@@ -116,54 +127,49 @@ body {
   align-items: center;
 }
 
-.fullvW {
-  width: 100vw;
+.justifyCenter {
+  justify-content: center;
 }
 
-.textCenter {
-  text-align: center;
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifySpaceBetween {
+  justify-content: space-between;
 }
 
 .grid {
   display: grid;
-  grid-template-columns:
-    calc(50vw - 39.5rem) repeat(12, [col-start] 1fr [col-end])
-    calc(50vw - 39.5rem);
-  column-gap: 30px;
-  row-gap: 30px;
+  grid-template-columns: 2em repeat(6, [col-start] 1fr [col-end]) 2em;
+  column-gap: 20px;
+  row-gap: 52px;
 }
 
-.fullWidth {
-  grid-column: 2 col-start / 11 col-end;
-}
-
-.leftThird {
-  grid-column: 1 col-start / 4 col-end;
+.orderMedia {
+  order: 1;
 }
 
 .centerThird {
-  grid-column: 5 col-start / 8 col-end;
-}
-
-.rightThird {
-  grid-column: 9 col-start / 12 col-end;
-}
-
-.leftHalf {
   grid-column: 1 col-start / 6 col-end;
 }
 
-.leftHalfCenter {
-  grid-column: 2 col-start / 6 col-end;
-}
-
-.rightHalf {
-  grid-column: 7 col-start / 12 col-end;
-}
-
+.fullWidth,
+.leftThird,
+.centerThird,
+.rightThird,
+.leftHalf,
+.leftHalfCenter,
+.rightHalf,
 .rightHalfCenter {
-  grid-column: 8 col-start / 12 col-end;
+  grid-column: 1 col-start / 6 col-end;
 }
+
+.smallGap {
+  column-gap: 5px;
+}
+
+/* Colors */
 
 .background {
   background-color: var(--background-color);
@@ -176,6 +182,8 @@ body {
 .primaryColor {
   color: var(--primary-color);
 }
+
+/* Links */
 
 .link {
   position: relative;
@@ -202,18 +210,14 @@ body {
   opacity: 1;
 }
 
+/* Images / Icons */
+
 .galleryImage {
-  width: 582px;
-  height: 398px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .galleryPosition {
   object-position: 0 -4em;
-}
-
-.polaroidImage {
-  width: 582px;
 }
 
 .logoIcon {
@@ -224,6 +228,78 @@ body {
   margin-top: -40px;
 }
 
-.smallGap {
-  column-gap: 5px;
+@media (min-width: 768px) {
+  /* Position */
+
+  .landing {
+    background-position: center;
+  }
+
+  .orderMedia {
+    order: unset;
+  }
+
+  /* Text */
+
+  .textLeftMedia {
+    text-align: left;
+  }
+
+  /* Grid / Flex */
+
+  .grid {
+    column-gap: 30px;
+    grid-template-columns:
+      calc(50vw - 39.5rem) repeat(12, [col-start] 1fr [col-end])
+      calc(50vw - 39.5rem);
+    row-gap: 30px;
+  }
+
+  .first {
+    order: unset;
+  }
+
+  .fullWidth {
+    grid-column: 2 col-start / 11 col-end;
+  }
+
+  .leftThird {
+    grid-column: 1 col-start / 4 col-end;
+  }
+
+  .centerThird {
+    grid-column: 5 col-start / 8 col-end;
+  }
+
+  .rightThird {
+    grid-column: 9 col-start / 12 col-end;
+  }
+
+  .leftHalf {
+    grid-column: 1 col-start / 6 col-end;
+  }
+
+  .leftHalfCenter {
+    grid-column: 2 col-start / 6 col-end;
+  }
+
+  .rightHalf {
+    grid-column: 7 col-start / 12 col-end;
+  }
+
+  .rightHalfCenter {
+    grid-column: 8 col-start / 12 col-end;
+  }
+
+  /* Images */
+
+  .galleryImage {
+    height: 398px;
+    object-fit: cover;
+    width: 582px;
+  }
+
+  .polaroidImage {
+    width: 582px;
+  }
 }
