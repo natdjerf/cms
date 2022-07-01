@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "@fontsource/raleway/400.css"
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="layout">
+    <div className="layout relative">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main className="main flexColumn alignCenter">{children}</main>
       <div className="footer">

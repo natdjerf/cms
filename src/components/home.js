@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import { Link } from "gatsby"
 import Shrimp from "../images/shrimp.inline.svg"
 import Fries from "../images/fries.inline.svg"
@@ -30,7 +30,8 @@ const Home = ({ data }) => {
     <>
       <section className="section landing fullvW">
         <div className="flex justifyCenter paddingTop30">
-          <h1 className="h1 textCenter">Tony's Clam Shop</h1>
+          <h1 className="h1 textCenter desktopOnly">Tony's Clam Shop</h1>
+          <h1 className="h1 textCenter mobileOnly">Tony's</h1>
         </div>
       </section>
       <section className="section paddingTop120 paddingBottom120">

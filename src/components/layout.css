@@ -3,9 +3,11 @@
 
 :root {
   --background-color: rgb(255, 226, 190, 0.55);
+  --base: #fff;
   --primary: #223a41;
   --primary-color: #f16a36;
   --headerMargin: 30px;
+  --headerMarginOffset: -30px;
 }
 
 /* Text */
@@ -62,7 +64,11 @@ body {
 }
 
 .marginNavOffset {
-  margin-right: var(--headerMargin);
+  margin-right: var(--headerMarginOffset);
+}
+
+.marginTopNav {
+  margin-top: 20px;
 }
 
 .landing {
@@ -73,10 +79,26 @@ body {
   min-height: 90vh;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .sticky {
   /* background: transparent; */
   position: sticky;
   /* top: 0; */
+}
+
+.relative {
+  position: relative;
+}
+
+.top {
+  top: 0;
+}
+
+.zMenu {
+  z-index: 1;
 }
 
 .paddingBottom60 {
@@ -112,6 +134,10 @@ body {
   width: 100vw;
 }
 
+.fullVh {
+  height: 100vh;
+}
+
 /* Grid / Flex */
 
 .flex {
@@ -125,6 +151,10 @@ body {
 
 .alignCenter {
   align-items: center;
+}
+
+.alignSelfEnd {
+  align-self: flex-end;
 }
 
 .justifyCenter {
@@ -175,12 +205,28 @@ body {
   background-color: var(--background-color);
 }
 
+.base {
+  background-color: var(--base);
+}
+
+.transparent {
+  background: transparent;
+}
+
 .primary {
   color: var(--primary);
 }
 
+.fillPrimary {
+  fill: var(--primary);
+}
+
 .primaryColor {
   color: var(--primary-color);
+}
+
+.noBorder {
+  border: none;
 }
 
 /* Links */
@@ -216,16 +262,26 @@ body {
   object-fit: contain;
 }
 
-.galleryPosition {
-  object-position: 0 -4em;
+.hamburgerIcon,
+.closeIcon {
+  height: 40px;
+  width: 40px;
 }
 
 .logoIcon {
   width: 90px;
 }
 
+.logoIconSmall {
+  width: 50px;
+}
+
 .marginIcon {
   margin-top: -40px;
+}
+
+.desktopOnly {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -239,6 +295,13 @@ body {
     order: unset;
   }
 
+  .desktopOnly {
+    display: flex;
+  }
+
+  .mobileOnly {
+    display: none;
+  }
   /* Text */
 
   .textLeftMedia {
@@ -302,4 +365,8 @@ body {
   .polaroidImage {
     width: 582px;
   }
+}
+
+.hidden {
+  display: none;
 }
