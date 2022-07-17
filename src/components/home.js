@@ -128,7 +128,7 @@ const Home = ({ data }) => {
             <p className="paddingTop30">{section_favorites_beverages}</p>
           </div>
           <div className="fullWidth textCenter extraBold upperCase paddingTop30">
-            <Link className="link primaryColor" to="/visit/">
+            <Link className="link primaryColor" to="/menu/">
               View Menu
             </Link>
           </div>

@@ -107,18 +107,64 @@ collections:
     folder: "content/menu"
     file: "content/menu/item.md"
     create: true
+    slug: "{{category}}-{{name}}"
     fields:
       - {
           label: Category,
           name: category,
           widget: list,
-          default: ["Box", "Platter"],
+          default:
+            [
+              "box",
+              "broiler",
+              "plates",
+              "baskets",
+              "sandwiches",
+              "griddle",
+              "wraps_subs",
+              "salads",
+              "sides",
+              "kids",
+              "favorites",
+            ],
+          hint: "Select one from list",
         }
-      - { label: Price, name: price, widget: number }
       - { label: Name, name: name, widget: string }
-      - { label: Small Price, name: small_price, widget: number }
-      - { label: Medium Price, name: medium_price, widget: number }
-      - { label: Large Price, name: large_price, widget: number }
+      - { label: Title, name: title, widget: string, hint: "For admin page" }
+      - {
+          label: Price - if one size,
+          name: price,
+          widget: string,
+          required: false,
+          hint: "As number - 9.95",
+        }
+      - {
+          label: Small Price,
+          name: small_price,
+          required: false,
+          widget: string,
+          hint: "As number - 9.95",
+        }
+      - {
+          label: Medium Price,
+          name: medium_price,
+          required: false,
+          widget: string,
+          hint: "As number - 9.95",
+        }
+      - {
+          label: Large Price,
+          name: large_price,
+          required: false,
+          widget: string,
+          hint: "As number - 9.95",
+        }
+      - {
+          label: Description,
+          name: description,
+          required: false,
+          widget: string,
+        }
 media_library:
   name: cloudinary
   config:

@@ -20,7 +20,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="flex justifyEnd upperCase extraBold marginNavOffset">
-              <Link className="link primary marginNav" to="/history/">
+              <Link className="link primary marginNav" to="/menu/">
                 Menu
               </Link>
               <Link className="link primary marginNav" to="/visit/">

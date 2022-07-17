@@ -12,6 +12,7 @@ import "@fontsource/raleway/400.css"
 import "@fontsource/raleway/800.css"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -29,9 +30,7 @@ const Layout = ({ children }) => {
     <div className="layout relative">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main className="main flexColumn alignCenter">{children}</main>
-      <div className="footer">
-        <footer>Footer</footer>
-      </div>
+      <Footer className="footer" />
     </div>
   )
 }
