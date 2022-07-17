@@ -1,6 +1,5 @@
 ---
-category:
-  - box
+category: box
 name: Whole Clams
 title: Whole Clams
 small_price: M.P.
