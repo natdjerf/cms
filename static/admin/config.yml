@@ -108,25 +108,13 @@ collections:
     file: "content/menu/item.md"
     create: true
     slug: "{{category}}-{{name}}"
+    identifier-field: slug
     fields:
       - {
           label: Category,
           name: category,
-          widget: list,
-          default:
-            [
-              "box",
-              "broiler",
-              "plates",
-              "baskets",
-              "sandwiches",
-              "griddle",
-              "wraps_subs",
-              "salads",
-              "sides",
-              "kids",
-              "favorites",
-            ],
+          widget: string,
+          default: "box, broiler, plates, baskets, sandwiches, griddle, wraps, subs, salads, sides, kids, favorites",
           hint: "Select one from list",
         }
       - { label: Name, name: name, widget: string }
