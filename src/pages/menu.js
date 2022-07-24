@@ -1,6 +1,16 @@
 import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
+import Shrimp from "../images/shrimp.inline.svg"
+import Fries from "../images/fries.inline.svg"
+import Burger from "../images/burger.inline.svg"
+import Cutlery from "../images/cutlery.inline.svg"
+import Beer from "../images/beer.inline.svg"
+import Soda from "../images/soda.inline.svg"
+import Bacon from "../images/bacon.inline.svg"
+import BbqTools from "../images/bbq-tools.inline.svg"
+import Cocktail from "../images/cocktail.inline.svg"
+import Drumstick from "../images/drumstick.inline.svg"
 
 const sections = {
   box: {
@@ -98,13 +108,13 @@ const Menu = props => {
     const category = menuItem.category
 
     if (sections[category]) {
-      sections[category].items.push(menuItem)
+      sections[category]?.items.push(menuItem)
     }
   })
 
-  const getItem = (section, item) => {
+  const buildItem = item => {
     return (
-      <p key={item.name}>
+      <p key={item.name} className="paddingTop8">
         {item.name} {item.price ? `  -  ${item.price}` : null}
         {item.small_price ? `  -  ${item.small_price}` : null}
         {item.medium_price ? `  |  ${item.medium_price}` : null}
@@ -113,13 +123,24 @@ const Menu = props => {
     )
   }
 
-  const getSection = section => {
+  const buildSection = section => {
     return (
-      <div key={section.name}>
-        <h2>{section.display_name}</h2>
-        {section.section_description && <p>{section.section_description}</p>}
-        {section.items.map(item => getItem(section, item))}
-        {section.additional_text && <p>{section.additional_text}</p>}
+      <div className="fullWidthSmall" key={section.name}>
+        <h3 className="h3 upperCase paddingTop20 primaryColor">
+          {section.display_name}
+        </h3>
+
+        {section.section_description && (
+          <p className="bodySmall paddingTop10">
+            {section.section_description}
+          </p>
+        )}
+        <div className="paddingTop20 paddingBottom20">
+          {section.items.map(item => buildItem(item))}
+        </div>
+        {section.additional_text && (
+          <p className="bodySmall">{section.additional_text}</p>
+        )}
       </div>
     )
   }
@@ -127,8 +148,28 @@ const Menu = props => {
   return (
     <Layout>
       <h1>Menu</h1>
-      <div className="textCenter">
-        {Object.entries(sections).map(([key, section]) => getSection(section))}
+      <div className="textCenter paddingTop20 grid">
+        <Shrimp role="presentation" alt="" className="col4 row1 hideMobile" />
+        <Fries role="presentation" alt="" className="col12 row2 hideMobile" />
+        <Burger role="presentation" alt="" className="col3 row3 hideMobile" />
+        <Bacon role="presentation" alt="" className="col11 row4 hideMobile" />
+        <BbqTools role="presentation" alt="" className="col4 row5 hideMobile" />
+        <Drumstick
+          role="presentation"
+          alt=""
+          className="col12 row6 hideMobile"
+        />
+        <Cocktail role="presentation" alt="" className="col3 row7 hideMobile" />
+        <Cutlery
+          role="presentation"
+          alt=""
+          className="col11 row8  hideMobile"
+        />
+        <Beer role="presentation" alt="" className="col4 row9 hideMobile" />
+        <Soda role="presentation" alt="" className="col12 row10  hideMobile" />
+        {Object.entries(sections).map(([key, section]) =>
+          buildSection(section)
+        )}
       </div>
     </Layout>
   )

@@ -34,7 +34,7 @@ const Home = ({ data }) => {
           <h1 className="h1 textCenter mobileOnly">Tony's</h1>
         </div>
       </section>
-      <section className="section paddingTop120 paddingBottom120">
+      <section className="section paddingTop120 paddingBottom120 width100">
         <div className="grid textCenter">
           <div className="leftThird">
             <h3 className="h3">Hours</h3>
@@ -65,7 +65,7 @@ const Home = ({ data }) => {
             <picture>
               <source
                 media="(min-width: 200px)"
-                srcset="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/welcome_crop_yicrh1.png"
+                srcSet="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/welcome_crop_yicrh1.png"
               />
               <img
                 className="polaroidImage"
@@ -90,7 +90,7 @@ const Home = ({ data }) => {
             <picture>
               <source
                 media="(min-width: 200px)"
-                srcset="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/finest_crop_ei5byw.png"
+                srcSet="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/finest_crop_ei5byw.png"
               />
               <img
                 className="polaroidImage"
@@ -143,7 +143,7 @@ const Home = ({ data }) => {
             <picture>
               <source
                 media="(min-width: 100px)"
-                srcset="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_2_kb7tor.png"
+                srcSet="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_2_kb7tor.png"
               />
               <img
                 className="galleryImage"
@@ -156,7 +156,7 @@ const Home = ({ data }) => {
             <picture>
               <source
                 media="(min-width: 100px)"
-                srcset="https://res.cloudinary.com/dpanbsxt4/image/upload/v1656265482/family_3_vtg1ri.png"
+                srcSet="https://res.cloudinary.com/dpanbsxt4/image/upload/v1656265482/family_3_vtg1ri.png"
               />
               <img
                 className="galleryImage galleryPosition"
@@ -169,7 +169,7 @@ const Home = ({ data }) => {
             <picture>
               <source
                 media="(min-width: 200px)"
-                srcset="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_1_aumyy6.png"
+                srcSet="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_1_aumyy6.png"
               />
               <img
                 className="galleryImage"
