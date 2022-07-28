@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout"
 import Shrimp from "../images/shrimp.inline.svg"
 import Fries from "../images/fries.inline.svg"
 import Burger from "../images/burger.inline.svg"
@@ -157,26 +156,29 @@ const Menu = ({ data }) => {
   }
 
   const buildSection = (section, isBeverage) => {
+    if (!section.items) {
+      return null
+    }
     return (
       <div className="fullWidthSmall" key={section.name}>
         <h3 className="h3 upperCase paddingTop20 primaryColor">
           {section.display_name}
         </h3>
+        {section.section_description && (
+          <p className="bodySmall paddingTop10">
+            {section.section_description}
+          </p>
+        )}
 
         {isBeverage ? (
           <div className="paddingTop20 paddingBottom20">
             {section.items.map(item => buildBeverage(item))}
           </div>
         ) : (
-          section.section_description && (
-            <p className="bodySmall paddingTop10">
-              {section.section_description}
-            </p>
-          )
+          <div className="paddingTop20 paddingBottom20">
+            {section.items.map(item => buildItem(item))}
+          </div>
         )}
-        <div className="paddingTop20 paddingBottom20">
-          {section.items.map(item => buildItem(item))}
-        </div>
         {section.additional_text && (
           <p className="bodySmall">{section.additional_text}</p>
         )}
