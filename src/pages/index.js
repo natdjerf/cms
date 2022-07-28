@@ -7,7 +7,6 @@ import Home from "../components/home"
 
 const IndexPage = props => {
   const data = props?.data?.allFile?.nodes[0]?.childMarkdownRemark?.frontmatter
-  console.log(data)
 
   return (
     <Layout>

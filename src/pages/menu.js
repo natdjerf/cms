@@ -101,39 +101,81 @@ const sections = {
   },
 }
 
+const beverage_sections = {
+  cocktails: {
+    display_name: "Cocktails",
+    items: [],
+  },
+  frozen: {
+    display_name: "Frozen",
+    items: [],
+  },
+  beer: {
+    display_name: "Beer, Seltzer, Cider",
+    items: [],
+  },
+  draft: {
+    display_name: "Draft",
+    items: [],
+  },
+  wine: {
+    display_name: "Wine",
+    items: [],
+  },
+  liquor: {
+    display_name: "Liquor",
+    items: [],
+  },
+}
+
 const Menu = props => {
   const menuItems = props?.data?.allFile?.nodes || []
   menuItems.forEach(item => {
     const menuItem = item?.childMarkdownRemark?.frontmatter
-    const category = menuItem.category
+    const category = menuItem?.category
 
     if (sections[category]) {
-      sections[category]?.items.push(menuItem)
+      sections[category].items.push(menuItem)
+    } else if (beverage_sections[category]) {
+      beverage_sections[category].items.push(menuItem)
     }
   })
 
   const buildItem = item => {
+    debugger
     return (
       <p key={item.name} className="paddingTop8">
-        {item.name} {item.price ? `  -  ${item.price}` : null}
-        {item.small_price ? `  -  ${item.small_price}` : null}
-        {item.medium_price ? `  |  ${item.medium_price}` : null}
-        {item.large_price ? `  |  ${item.large_price}` : null}
+        {item?.name} {item?.price ? `  -  ${item.price}` : null}
+        {item?.small_price ? `  -  ${item.small_price}` : null}
+        {item?.medium_price ? `  |  ${item.medium_price}` : null}
+        {item?.large_price ? `  |  ${item.large_price}` : null}
       </p>
     )
   }
 
-  const buildSection = section => {
+  const buildBeverage = item => {
+    const drinks = item?.drinks?.split(",")
+
+    return drinks.map(drink => <p key={drink}>{drink}</p>)
+  }
+
+  const buildSection = (section, isBeverage) => {
     return (
       <div className="fullWidthSmall" key={section.name}>
         <h3 className="h3 upperCase paddingTop20 primaryColor">
           {section.display_name}
         </h3>
 
-        {section.section_description && (
-          <p className="bodySmall paddingTop10">
-            {section.section_description}
-          </p>
+        {isBeverage ? (
+          <div className="paddingTop20 paddingBottom20">
+            {section.items.map(item => buildBeverage(item))}
+          </div>
+        ) : (
+          section.section_description && (
+            <p className="bodySmall paddingTop10">
+              {section.section_description}
+            </p>
+          )
         )}
         <div className="paddingTop20 paddingBottom20">
           {section.items.map(item => buildItem(item))}
@@ -147,7 +189,7 @@ const Menu = props => {
 
   return (
     <Layout>
-      <h1>Menu</h1>
+      <h1 className="h1">Menu</h1>
       <div className="textCenter paddingTop20 grid">
         <Shrimp role="presentation" alt="" className="col4 row1 hideMobile" />
         <Fries role="presentation" alt="" className="col12 row2 hideMobile" />
@@ -159,16 +201,39 @@ const Menu = props => {
           alt=""
           className="col12 row6 hideMobile"
         />
-        <Cocktail role="presentation" alt="" className="col3 row7 hideMobile" />
-        <Cutlery
+        <Cutlery role="presentation" alt="" className="col3 row7 hideMobile" />
+        <Shrimp role="presentation" alt="" className="col11 row8  hideMobile" />
+        <Fries role="presentation" alt="" className="col4 row9 hideMobile" />
+        <Burger
           role="presentation"
           alt=""
-          className="col11 row8  hideMobile"
+          className="col12 row10  hideMobile"
         />
-        <Beer role="presentation" alt="" className="col4 row9 hideMobile" />
-        <Soda role="presentation" alt="" className="col12 row10  hideMobile" />
+        <Bacon role="presentation" alt="" className="col3 row11 hideMobile" />
+        <BbqTools
+          role="presentation"
+          alt=""
+          className="col11 row12 hideMobile"
+        />
         {Object.entries(sections).map(([key, section]) =>
           buildSection(section)
+        )}
+      </div>
+
+      <h2 className="h2">Beverages</h2>
+      <div className="textCenter paddingTop20 grid">
+        <Cocktail role="presentation" alt="" className="col4 row1 hideMobile" />
+        <Beer role="presentation" alt="" className="col12 row2 hideMobile" />
+        <Soda role="presentation" alt="" className="col3 row3 hideMobile" />
+        <Cocktail
+          role="presentation"
+          alt=""
+          className="col11 row4 hideMobile"
+        />
+        <Beer role="presentation" alt="" className="col4 row5 hideMobile" />
+        <Soda role="presentation" alt="" className="col12 row6  hideMobile" />
+        {Object.entries(beverage_sections).map(([key, section]) =>
+          buildSection(section, true)
         )}
       </div>
     </Layout>
@@ -179,7 +244,7 @@ export default Menu
 
 export const query = graphql`
   query Menu {
-    allFile(filter: { dir: { regex: "/menu/" } }) {
+    allFile(filter: { dir: { regex: "/menu|beverage/" } }) {
       nodes {
         childMarkdownRemark {
           frontmatter {
@@ -190,6 +255,7 @@ export const query = graphql`
             small_price
             medium_price
             large_price
+            drinks
           }
         }
       }

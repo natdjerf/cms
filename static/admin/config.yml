@@ -120,11 +120,11 @@ collections:
       - { label: Name, name: name, widget: string }
       - { label: Title, name: title, widget: string, hint: "For admin page" }
       - {
-          label: Price - if one size,
+          label: Price (if one size),
           name: price,
           widget: string,
           required: false,
-          hint: "As number - 9.95",
+          hint: " As number - 9.95. Fill in if one size only (ie, sandwich or basket). If multiple sizes, leave blank and fill in small/medium/large sizes.",
         }
       - {
           label: Small Price,
@@ -152,6 +152,39 @@ collections:
           name: description,
           required: false,
           widget: string,
+        }
+  - label: "Beverages"
+    name: "beverages"
+    folder: "content/beverages"
+    file: "content/beverages/item.md"
+    create: true
+    slug: "{{category}}"
+    identifier-field: slug
+    fields:
+      - {
+          label: Category,
+          name: category,
+          widget: string,
+          default: "cocktails, frozen, beer, draft, wine, liquor",
+          hint: "Select one from list (lowercase) - beer includes cider, seltzer",
+        }
+      - {
+          label: Title,
+          name: title,
+          widget: string,
+          hint: "Category for admin page",
+        }
+      - {
+          label: Name,
+          name: Name,
+          widget: string,
+          hint: "Same as title and category",
+        }
+      - {
+          label: Drinks,
+          name: drinks,
+          widget: string,
+          hint: "As comma separated list, ie 'Harpoon, Corona, ...'",
         }
 media_library:
   name: cloudinary
