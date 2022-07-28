@@ -11,8 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import "@fontsource/raleway/400.css"
 import "@fontsource/raleway/800.css"
 
-import Header from "./header"
-import Footer from "./footer"
+import Header from "./Header"
+import Footer from "./Footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {

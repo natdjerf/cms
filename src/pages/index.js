@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import Seo from "../components/seo"
-import Home from "../components/home"
+import Home from "../components/Home"
 
 const IndexPage = props => {
   const data = props?.data?.allFile?.nodes[0]?.childMarkdownRemark?.frontmatter
