@@ -23,14 +23,33 @@ const Layout = ({ children }) => {
           title
         }
       }
+      allFile(
+        filter: { sourceInstanceName: { eq: "content" }, name: { eq: "home" } }
+      ) {
+        nodes {
+          childMarkdownRemark {
+            frontmatter {
+              title
+              hours
+              hours_description
+              phone
+              email
+              address_line_1
+              address_line_2
+            }
+          }
+        }
+      }
     }
   `)
+
+  const footerData = data?.allFile?.nodes[0]?.childMarkdownRemark?.frontmatter
 
   return (
     <div className="layout relative">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main className="main flexColumn alignCenter">{children}</main>
-      <Footer className="footer" />
+      <Footer className="footer" data={footerData} />
     </div>
   )
 }
