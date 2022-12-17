@@ -162,6 +162,10 @@ body {
   padding-top: 60px;
 }
 
+.paddingTop80m30d {
+  padding-top: 80px;
+}
+
 .paddingTop120 {
   padding-top: 120px;
 }
@@ -259,9 +263,17 @@ body {
   grid-column: 1 col-start / 6 col-end;
 }
 
+.row1 {
+  grid-column: 3;
+}
+
 .smallGap {
   column-gap: 5px;
   grid-column: 1 col-start / 6 col-end;
+}
+
+.span3 {
+  grid-column: span 3;
 }
 
 /* Colors */
@@ -366,6 +378,10 @@ body {
 
   .mobileOnly {
     display: none;
+  }
+
+  .paddingTop80m30d {
+    padding-top: 30px;
   }
   /* Text */
 

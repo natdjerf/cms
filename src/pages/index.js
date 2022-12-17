@@ -43,6 +43,16 @@ export const query = graphql`
             section_favorites_seafood
             section_favorites_griddle
             section_favorites_beverages
+            welcome_image_about
+            welcome_image_about_description
+            welcome_image_food
+            welcome_image_food_description
+            family_image_1
+            family_image_1_description
+            family_image_2
+            family_image_2_description
+            family_image_3
+            family_image_3_description
           }
         }
       }

@@ -56,7 +56,10 @@ const Header = () => {
             <Close className="closeIcon" />
           </button>
           <div className="upperCase extraBold flexColumn">
-            <Link className="link primary marginTopNav" to="/history/">
+            <Link className="link primary marginTopNav" to="/">
+              Home
+            </Link>
+            <Link className="link primary marginTopNav" to="/menu/">
               Menu
             </Link>
             <Link className="link primary marginTopNav" to="/visit/">

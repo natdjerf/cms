@@ -2,8 +2,14 @@ backend:
   name: github
   repo: natdjerf/cms
 
-media_folder: static/assets
-public_folder: assets
+media_folder: static/img
+public_folder: img
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dpanbsxt4
+    api_key: 927844834554744
+
 collections:
   - label: "Pages"
     name: "pages"
@@ -83,6 +89,44 @@ collections:
           - {
               label: Section favorites beverages,
               name: section_favorites_beverages,
+              widget: text,
+            }
+          - {
+              label: Welcome image about,
+              name: welcome_image_about,
+              widget: image,
+            }
+          - {
+              label: Welcome image about description,
+              name: welcome_image_about_description,
+              widget: text,
+            }
+          - {
+              label: Welcome image food,
+              name: welcome_image_food,
+              widget: image,
+            }
+          - {
+              label: Welcome image food description,
+              name: welcome_image_food_description,
+              widget: text,
+            }
+          - { label: Family image 1, name: family_image_1, widget: image }
+          - {
+              label: Family image 1 description,
+              name: family_image_1_description,
+              widget: text,
+            }
+          - { label: Family image 2, name: family_image_2, widget: image }
+          - {
+              label: Family image description,
+              name: family_image_2_description,
+              widget: text,
+            }
+          - { label: Family image 3, name: family_image_3, widget: image }
+          - {
+              label: Family image 3 description,
+              name: family_image_3_description,
               widget: text,
             }
   - label: "Historical Postcards"
@@ -186,9 +230,3 @@ collections:
           widget: string,
           hint: "As comma separated list, ie 'Harpoon, Corona, ...'",
         }
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: dpanbsxt4
-    api_key: 927844834554744
-  output_filename_only: true

@@ -25,13 +25,22 @@ const Home = ({ data }) => {
     section_favorites_seafood,
     section_favorites_griddle,
     section_favorites_beverages,
+    welcome_image_about,
+    welcome_image_about_description,
+    welcome_image_food,
+    welcome_image_food_description,
+    family_image_1,
+    family_image_1_description,
+    family_image_2,
+    family_image_2_description,
+    family_image_3,
+    family_image_3_description,
   } = data
   return (
     <>
       <section className="section landing fullvW">
-        <div className="flex justifyCenter paddingTop30">
-          <h1 className="h1 textCenter desktopOnly">Tony's Clam Shop</h1>
-          <h1 className="h1 textCenter mobileOnly">Tony's</h1>
+        <div className="flex justifyCenter paddingTop80m30d">
+          <h1 className="h1 textCenter">Tony's Clam Shop</h1>
         </div>
       </section>
       <section className="section paddingTop120 paddingBottom120 width100">
@@ -63,14 +72,11 @@ const Home = ({ data }) => {
         <div className="grid alignCenter textCenter textLeftMedia">
           <div className="leftHalf orderMedia">
             <picture>
-              <source
-                media="(min-width: 200px)"
-                srcSet="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/welcome_crop_yicrh1.png"
-              />
+              <source media="(min-width: 200px)" srcSet={welcome_image_about} />
               <img
                 className="polaroidImage"
-                src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/welcome_crop_yicrh1.png"
-                alt="polaroid early restaurant days"
+                src={welcome_image_about}
+                alt={welcome_image_about_description}
               ></img>
             </picture>
           </div>
@@ -88,14 +94,11 @@ const Home = ({ data }) => {
           </div>
           <div className="rightHalf">
             <picture>
-              <source
-                media="(min-width: 200px)"
-                srcSet="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/finest_crop_ei5byw.png"
-              />
+              <source media="(min-width: 200px)" srcSet={welcome_image_food} />
               <img
                 className="polaroidImage"
-                src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/finest_crop_ei5byw.png"
-                alt="polaroid restaurant 20th anniversary"
+                src={welcome_image_food}
+                alt={welcome_image_food_description}
               ></img>
             </picture>
           </div>
@@ -134,47 +137,38 @@ const Home = ({ data }) => {
           </div>
         </div>
       </section>
-      <section className="section paddingTop60">
+      <section className="section paddingTop60 paddingBottom40">
         <div className="grid alignCenter">
           <h2 className="h2 fullWidth textCenter paddingTop40">
             {section_family_header}
           </h2>
           <div className="leftHalf">
             <picture>
-              <source
-                media="(min-width: 100px)"
-                srcSet="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_2_kb7tor.png"
-              />
+              <source media="(min-width: 100px)" srcSet={family_image_1} />
               <img
                 className="galleryImage"
-                src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_2_kb7tor.png"
-                alt="family"
+                src={family_image_1}
+                alt={family_image_1_description}
               ></img>
             </picture>
           </div>
           <div className="rightHalf">
             <picture>
-              <source
-                media="(min-width: 100px)"
-                srcSet="https://res.cloudinary.com/dpanbsxt4/image/upload/v1656265482/family_3_vtg1ri.png"
-              />
+              <source media="(min-width: 200px)" srcSet={family_image_2} />
               <img
-                className="galleryImage galleryPosition"
-                src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1656265482/family_3_vtg1ri.png"
-                alt="family"
+                className="galleryImage"
+                src={family_image_2}
+                alt={family_image_2_description}
               ></img>
             </picture>
           </div>
           <div className="leftHalf">
             <picture>
-              <source
-                media="(min-width: 200px)"
-                srcSet="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_1_aumyy6.png"
-              />
+              <source media="(min-width: 100px)" srcSet={family_image_3} />
               <img
-                className="galleryImage"
-                src="https://res.cloudinary.com/dpanbsxt4/image/upload/v1655768250/family_1_aumyy6.png"
-                alt="family"
+                className="galleryImage galleryPosition"
+                src={family_image_3}
+                alt={family_image_3_description}
               ></img>
             </picture>
           </div>
