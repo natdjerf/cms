@@ -4,16 +4,35 @@ import Layout from "../components/layout"
 import Gallery from "../components/Gallery"
 
 const GalleryPage = props => {
-  // const data =
-  //   props?.data?.allFile?.nodes[0]?.childMarkdownRemark?.frontmatter || {}
+  const content = props?.data?.allFile?.nodes || []
 
   return (
     <Layout>
-      <Gallery></Gallery>
+      <Gallery content={content}></Gallery>
     </Layout>
   )
 }
 
 export default GalleryPage
 
-// export const query = graphql``
+const query = graphql`
+  query Gallery {
+    allFile(
+      filter: {
+        sourceInstanceName: { eq: "content" }
+        relativeDirectory: { eq: "gallery" }
+      }
+    ) {
+      nodes {
+        childMarkdownRemark {
+          frontmatter {
+            category
+            image
+            name
+            title
+          }
+        }
+      }
+    }
+  }
+`

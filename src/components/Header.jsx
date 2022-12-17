@@ -26,7 +26,7 @@ const Header = () => {
               <Link className="link primary marginNav" to="/visit/">
                 Visit
               </Link>
-              <Link className="link primary marginTopNav" to="/gallery/">
+              <Link className="link primary marginNav" to="/gallery/">
                 Gallery
               </Link>
             </div>
