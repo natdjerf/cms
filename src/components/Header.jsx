@@ -26,6 +26,9 @@ const Header = () => {
               <Link className="link primary marginNav" to="/visit/">
                 Visit
               </Link>
+              <Link className="link primary marginTopNav" to="/gallery/">
+                Gallery
+              </Link>
             </div>
           </div>
           <div className="mobileOnly flex justifySpaceBetween">
@@ -64,6 +67,9 @@ const Header = () => {
             </Link>
             <Link className="link primary marginTopNav" to="/visit/">
               Visit
+            </Link>
+            <Link className="link primary marginTopNav" to="/gallery/">
+              Gallery
             </Link>
           </div>
         </div>

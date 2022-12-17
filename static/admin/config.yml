@@ -140,12 +140,19 @@ collections:
   - label: "Gallery"
     name: "gallery"
     folder: "content/gallery"
-    file: "content/gallery/image.md"
     create: true
+    slug: "{{category}}-{{name}}"
     fields:
       - { label: Image, name: image, widget: image }
       - { label: Name, name: name, widget: string }
-      - { label: Description, name: description, widget: string }
+      - { label: Title, name: title, widget: string }
+      - {
+          label: Category,
+          name: category,
+          widget: string,
+          default: "plate, food, store, team",
+          hint: "Select one from list- plate: round plate photos, store: the shop, team: family and employees",
+        }
   - label: "Menu"
     name: "menu"
     folder: "content/menu"
