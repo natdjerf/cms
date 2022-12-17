@@ -178,6 +178,18 @@ body {
   height: 100vh;
 }
 
+.w40 {
+  width: 40px;
+}
+
+.w50 {
+  width: 50px;
+}
+
+.w60 {
+  width: 60px;
+}
+
 .width100 {
   width: 100%;
 }
@@ -225,6 +237,10 @@ body {
 
 .justifySpaceBetween {
   justify-content: space-between;
+}
+
+.gap5 {
+  gap: 5px;
 }
 
 .grid {
@@ -355,6 +371,10 @@ body {
 
 .marginIcon {
   margin-top: -40px;
+}
+
+.mobileFoodIcon {
+  width: 60px;
 }
 
 .desktopOnly {
