@@ -14,7 +14,7 @@ const Gallery = props => {
       items: [],
     },
     team: {
-      display_name: "The Team",
+      display_name: "The Tony's team",
       items: [],
     },
     store: {
@@ -43,12 +43,14 @@ const Gallery = props => {
       <div className="">
         {Object.entries(config).map(([key, value]) => {
           return (
-            <div key={key} className="h3Bold uppercase paddingTB30">
-              <h3>{value.display_name}</h3>
-              <div className="">
+            <div key={key}>
+              <h3 className="h3 upperCase paddingTop40 paddingBottom40">
+                {value.display_name}
+              </h3>
+              <div className={`galleryGrid ${key}Grid paddingMin`}>
                 {value.items.map(item => (
                   <div key={item.title}>
-                    <picture className="">
+                    <picture className={`${key}`}>
                       <source media="(min-width: 200px)" srcSet="" />
                       <img
                         className=""

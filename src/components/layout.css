@@ -255,6 +255,14 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.galleryGrid {
+  display: grid;
+}
+
+.plateGrid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .orderMedia {
   order: 1;
 }
@@ -421,6 +429,22 @@ body {
       calc(50vw - 39.5rem) repeat(12, [col-start] 1fr [col-end])
       calc(50vw - 39.5rem);
     row-gap: 30px;
+  }
+
+  .plateGrid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .foodGrid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .teamGrid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .storeGrid {
+    grid-template-columns: repeat(2, 2fr);
   }
 
   .first {

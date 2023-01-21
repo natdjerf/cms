@@ -15,7 +15,7 @@ const GalleryPage = props => {
 
 export default GalleryPage
 
-const query = graphql`
+export const query = graphql`
   query Gallery {
     allFile(
       filter: {
