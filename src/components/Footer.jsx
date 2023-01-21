@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import Tripadvisor from "../images/tripadvisor.inline.svg"
 import Facebook from "../images/facebook.inline.svg"
