@@ -170,6 +170,11 @@ body {
   padding-top: 120px;
 }
 
+.pressIframe {
+  height: 157.5px;
+  width: 265px;
+}
+
 .fullvW {
   width: 100vw;
 }
@@ -577,6 +582,11 @@ body {
 
   .polaroidImage {
     width: 582px;
+  }
+
+  .pressIframe {
+    height: 315px;
+    width: 530px;
   }
 }
 
