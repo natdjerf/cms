@@ -4,7 +4,7 @@ hours: 11:00am to 9:00pm
 hours_description: Open daily
 address_line_1: 861 Quincy Shore Drive
 address_line_2: Quincy MA 02170
-phone: 617-773-7306
+phone: 617-773-5090
 email: info@tonysclamshop.com
 section_welcome_header: Welcome
 section_welcome_text: We are a casual, family friendly restaurant on Quincy’s
