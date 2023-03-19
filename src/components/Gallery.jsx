@@ -18,7 +18,7 @@ const Gallery = props => {
       items: [],
     },
     store: {
-      display_name: "The Shop Over the Years",
+      display_name: "The Shop",
       items: [],
     },
   }

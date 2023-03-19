@@ -80,7 +80,12 @@ body {
 }
 
 .landing {
-  background: url("https://res.cloudinary.com/dpanbsxt4/image/upload/v1655754218/Landing_Crop_ipfwta.png");
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.4),
+      rgba(0, 0, 0, 0)
+    ),
+    url("https://res.cloudinary.com/dpanbsxt4/image/upload/v1655754218/Landing_Crop_ipfwta.png");
   background-size: cover;
   background-position: 15%;
   margin-top: -84px; /* margin top 30px+ nav height 54px */
@@ -440,16 +445,12 @@ body {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .foodGrid {
-    grid-template-columns: repeat(2, 2fr);
-  }
-
-  .teamGrid {
-    grid-template-columns: repeat(2, 2fr);
-  }
-
+  .foodGrid,
+  .teamGrid,
   .storeGrid {
+    grid-gap: 20px;
     grid-template-columns: repeat(2, 2fr);
+    justify-items: center;
   }
 
   .first {
