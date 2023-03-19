@@ -35,7 +35,7 @@ family_image_1: https://res.cloudinary.com/dpanbsxt4/image/upload/v1671305235/To
 family_image_1_description: Kandalaft family - Tony, Tillie, Karen, Roy, Gary
 family_image_2: https://res.cloudinary.com/dpanbsxt4/image/upload/v1671305235/Tonys/family_4_khlihn.png
 family_image_2_description: Kandalaft family with manager Shawn and kitchen lead cook Hakim
-family_image_3: https://res.cloudinary.com/dpanbsxt4/image/upload/v1671305235/Tonys/family_3_vdcnzx.png
-family_image_3_description: Shawn at counter
+family_image_3: https://res.cloudinary.com/dpanbsxt4/image/upload/v1679241224/thethe_jido_slxj6t.png
+family_image_3_description: Tony and Tillie
 image: https://tonysclamshop.com/wp-content/uploads/2015/03/Tonys-BG-HDR-e1433614147945.jpg
 ---
