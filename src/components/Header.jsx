@@ -9,6 +9,25 @@ import "./layout.css"
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const menuLinks = [
+    {
+      url: "/menu/",
+      label: "Menu",
+    },
+    {
+      url: "/visit/",
+      label: "Visit",
+    },
+    {
+      url: "/gallery/",
+      label: "Gallery",
+    },
+    {
+      url: "/press/",
+      label: "Press",
+    },
+  ]
+
   return (
     <>
       <header className="sticky paddingTop30 paddingMin">
@@ -20,15 +39,11 @@ const Header = () => {
               </Link>
             </div>
             <div className="flex justifyEnd upperCase extraBold marginNavOffset">
-              <Link className="link primary marginNav" to="/menu/">
-                Menu
-              </Link>
-              <Link className="link primary marginNav" to="/visit/">
-                Visit
-              </Link>
-              <Link className="link primary marginNav" to="/gallery/">
-                Gallery
-              </Link>
+              {menuLinks.map(({ url, label }) => (
+                <Link className="link primary marginNav" to={url}>
+                  {label}
+                </Link>
+              ))}
             </div>
           </div>
           <div className="mobileOnly flex justifySpaceBetween">
@@ -59,18 +74,13 @@ const Header = () => {
             <Close className="closeIcon" />
           </button>
           <div className="upperCase extraBold flexColumn">
-            <Link className="link primary marginTopNav" to="/">
-              Home
-            </Link>
-            <Link className="link primary marginTopNav" to="/menu/">
-              Menu
-            </Link>
-            <Link className="link primary marginTopNav" to="/visit/">
-              Visit
-            </Link>
-            <Link className="link primary marginTopNav" to="/gallery/">
-              Gallery
-            </Link>
+            {menuLinks.map(({ url, label }) => (
+              <div className="paddingTop10">
+                <Link className="link primary marginNav" to={url}>
+                  {label}
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>
