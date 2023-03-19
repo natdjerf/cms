@@ -51,13 +51,6 @@ const Press = () => {
             ></iframe>
           </div>
         </div>
-        <div>
-          <div>
-            <a href="https://boscp.com/2019/04/19/tonys-clam-shop-quincys-historical-seaside-attraction/">
-              Tony’s Clam Shop Quincy’s Historical Seaside Attraction
-            </a>
-          </div>
-        </div>
       </div>
     </>
   )
