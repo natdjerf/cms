@@ -40,7 +40,7 @@ const Header = () => {
             </div>
             <div className="flex justifyEnd upperCase extraBold marginNavOffset">
               {menuLinks.map(({ url, label }) => (
-                <Link className="link primary marginNav" to={url}>
+                <Link key={label} className="link primary marginNav" to={url}>
                   {label}
                 </Link>
               ))}
@@ -76,7 +76,7 @@ const Header = () => {
           <div className="upperCase extraBold flexColumn">
             {menuLinks.map(({ url, label }) => (
               <div className="paddingTop10">
-                <Link className="link primary marginNav" to={url}>
+                <Link key={label} className="link primary marginNav" to={url}>
                   {label}
                 </Link>
               </div>
