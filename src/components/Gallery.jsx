@@ -40,7 +40,7 @@ const Gallery = props => {
   return (
     <section className="textCenter">
       <h1 className="h1">Gallery</h1>
-      <div className="">
+      <div className="paddingBottom40">
         {Object.entries(config).map(([key, value]) => {
           return (
             <div key={key}>

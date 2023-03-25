@@ -26,6 +26,10 @@ body {
   font-weight: 800;
 }
 
+.bodyXSmall {
+  font-size: 12px;
+}
+
 .bodySmall {
   font-size: 14px;
 }
@@ -253,6 +257,10 @@ body {
   gap: 5px;
 }
 
+.gap20 {
+  gap: 20px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 2em repeat(6, [col-start] 1fr [col-end]) 2em;
@@ -453,8 +461,16 @@ body {
     justify-items: center;
   }
 
+  .col2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .first {
     order: unset;
+  }
+
+  .justifyItemsCenter {
+    justify-items: center;
   }
 
   .fullWidth {

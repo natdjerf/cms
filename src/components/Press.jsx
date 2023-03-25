@@ -2,10 +2,10 @@ import React from "react"
 
 const Press = () => {
   return (
-    <>
-      <h1 className="h1">In the Press</h1>
-      <div className="">
-        <div className="galleryGrid foodGrid gap5 justifyCenter paddingMin">
+    <section>
+      <h1 className="h1 textCenter">In the Press</h1>
+      <div className="paddingTop40 paddingBottom40">
+        <div className="galleryGrid justifyItemsCenter col2 gap20 justifyCenter paddingMin">
           <div>
             <h4>Phantom Gourmet</h4>
             <iframe
@@ -52,7 +52,7 @@ const Press = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   )
 }
 
