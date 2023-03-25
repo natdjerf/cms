@@ -6,6 +6,7 @@
   --base: #fff;
   --primary: #223a41;
   --primary-color: #f16a36;
+  --secondary: #5aa1fb;
   --headerMargin: 30px;
   --headerMarginOffset: -30px;
 }
@@ -47,6 +48,10 @@ body {
 .h3 {
   font-family: "Gentle";
   font-size: 24px;
+}
+
+.h5Body {
+  font-size: 18px;
 }
 
 .upperCase {
@@ -120,6 +125,10 @@ body {
 
 .marginBottom60 {
   margin-bottom: 60px;
+}
+
+.paddingBanner {
+  padding: 5px 5%;
 }
 
 .paddingBottom20 {
@@ -324,6 +333,10 @@ body {
   background-color: var(--background-color);
 }
 
+.backgroundSecondary {
+  background-color: var(--secondary);
+}
+
 .base {
   background-color: var(--base);
 }
@@ -424,6 +437,10 @@ body {
 
   .mobileOnly {
     display: none;
+  }
+
+  .paddingBanner {
+    padding: 5px 5%;
   }
 
   .paddingTop80m30d {

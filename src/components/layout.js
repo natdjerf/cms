@@ -13,6 +13,7 @@ import "@fontsource/raleway/800.css"
 
 import Header from "./Header"
 import Footer from "./Footer"
+import Banner from "./Banner"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
           title
         }
       }
-      allFile(
+      footer: allFile(
         filter: { sourceInstanceName: { eq: "content" }, name: { eq: "home" } }
       ) {
         nodes {
@@ -40,13 +41,31 @@ const Layout = ({ children }) => {
           }
         }
       }
+      banner: allFile(
+        filter: {
+          sourceInstanceName: { eq: "content" }
+          name: { eq: "banner" }
+        }
+      ) {
+        nodes {
+          childMarkdownRemark {
+            frontmatter {
+              message
+              active
+            }
+          }
+        }
+      }
     }
   `)
 
-  const footerData = data?.allFile?.nodes[0]?.childMarkdownRemark?.frontmatter
+  const footerData = data?.footer?.nodes[0]?.childMarkdownRemark?.frontmatter
+  const bannerData = data?.banner?.nodes[0]?.childMarkdownRemark?.frontmatter
+  const showBanner = bannerData?.active && bannerData?.message
 
   return (
     <div className="layout relative">
+      {showBanner && <Banner data={bannerData} />}
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main className="main flexColumn alignCenter">{children}</main>
       <Footer className="footer" data={footerData} />
