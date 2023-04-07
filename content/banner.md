@@ -1,5 +1,4 @@
 ---
-message: We will be closed for the winter season on Sunday evening, October
-  16th. Thank you for your patronage and have a safe & healthy winter! Call 617-773-5090
+message: Opening April 6th! 11am - 9pm. Hours may vary, please call 617-773-5090
 active: true
 ---
