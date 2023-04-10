@@ -9,7 +9,7 @@ const Visit = ({ data }) => {
 
       <div className="flexColum alignCenter textCenter paddingTop40">
         <h3 className="h3 primaryColor">
-          {`Now open for our 58th season! We will be open every day ${hours}`}
+          {`Now open for our 59th season! We will be open every day ${hours}`}
         </h3>
         <p className="paddingTop20 paddingBottom20">
           Hours can vary, please call!&nbsp;

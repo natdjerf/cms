@@ -206,6 +206,9 @@ const Menu = ({ data }) => {
         <Burger role="presentation" alt="" className="w60" />
         <Soda role="presentation" alt="" className="w40" />
       </div>
+      <div className="flex justifyCenter bodySmall">
+        Prices subject to change
+      </div>
       <div className="textCenter paddingTop20 grid">
         <Shrimp role="presentation" alt="" className="col4 row1 hideMobile" />
         <Fries role="presentation" alt="" className="col12 row2 hideMobile" />

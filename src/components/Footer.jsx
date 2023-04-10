@@ -29,7 +29,7 @@ const Footer = ({ data }) => {
             className="primary"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://tonysclamshop.com/data/employment_application.pdf"
+            href="https://res.cloudinary.com/dpanbsxt4/image/upload/v1681153200/Tonys/Application_zxvnsa.pdf"
           >
             Application
           </a>

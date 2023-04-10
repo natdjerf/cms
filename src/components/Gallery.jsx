@@ -14,11 +14,11 @@ const Gallery = props => {
       items: [],
     },
     team: {
-      display_name: "The Tony's team",
+      display_name: "The family and employees",
       items: [],
     },
     store: {
-      display_name: "The Shop",
+      display_name: "The shop over the years",
       items: [],
     },
   }

@@ -28,6 +28,14 @@ const Header = () => {
     },
   ]
 
+  const mobileMenuLinks = [
+    {
+      url: "/",
+      label: "Home",
+    },
+    ...menuLinks,
+  ]
+
   return (
     <>
       <header className="sticky paddingTop30 paddingMin">
@@ -74,8 +82,8 @@ const Header = () => {
             <Close className="closeIcon" />
           </button>
           <div className="upperCase extraBold flexColumn">
-            {menuLinks.map(({ url, label }) => (
-              <div className="paddingTop10">
+            {mobileMenuLinks.map(({ url, label }) => (
+              <div className="paddingTop20">
                 <Link key={label} className="link primary marginNav" to={url}>
                   {label}
                 </Link>
