@@ -155,8 +155,8 @@ collections:
           label: Category,
           name: category,
           widget: string,
-          default: "plate, food, store, team",
-          hint: "Select one from list- plate: round plate photos, store: the shop, team: family and employees",
+          default: "plate, store, team",
+          hint: "Select one from list- plate: round food photos, store: the shop, team: family and employees",
         }
   - label: "Menu"
     name: "menu"

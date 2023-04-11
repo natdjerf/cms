@@ -6,10 +6,6 @@ const Gallery = props => {
 
   const sections = {
     plate: {
-      display_name: "Plates",
-      items: [],
-    },
-    food: {
       display_name: "Food",
       items: [],
     },

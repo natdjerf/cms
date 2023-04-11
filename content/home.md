@@ -9,7 +9,7 @@ email: info@tonysclamshop.com
 section_welcome_header: Welcome
 section_welcome_text: We are a casual, family friendly restaurant on Quincy’s
   historic Wollaston Beach. Come by for fried clams, a fresh lobster roll, and a
-  cold beer on our breezy, ocean front patio.
+  cold beer or cocktail on our breezy, ocean front patio or backyard garden.
 section_food_header: The finest seafood
 section_food_text: Started in 1964 and family owned for over fifty years, Tony’s
   is a summertime staple for fresh New England seafood. We source the top local
