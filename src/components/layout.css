@@ -94,7 +94,7 @@ body {
       rgba(255, 255, 255, 0.4),
       rgba(0, 0, 0, 0)
     ),
-    url("https://res.cloudinary.com/dpanbsxt4/image/upload/v1655754218/Landing_Crop_ipfwta.png");
+    url("../../static/img/landing_crop_oaupqt.png");
   background-size: cover;
   background-position: 15%;
   margin-top: -84px; /* margin top 30px+ nav height 54px */

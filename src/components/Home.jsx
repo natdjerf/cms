@@ -25,15 +25,15 @@ const Home = ({ data }) => {
     section_favorites_seafood,
     section_favorites_griddle,
     section_favorites_beverages,
-    welcome_image_about,
+    welcome_image_about_url,
     welcome_image_about_description,
-    welcome_image_food,
+    welcome_image_food_url,
     welcome_image_food_description,
-    family_image_1,
+    family_image_1_url,
     family_image_1_description,
-    family_image_2,
+    family_image_2_url,
     family_image_2_description,
-    family_image_3,
+    family_image_3_url,
     family_image_3_description,
   } = data
   return (
@@ -72,10 +72,13 @@ const Home = ({ data }) => {
         <div className="grid alignCenter textCenter textLeftMedia">
           <div className="leftHalf orderMedia">
             <picture>
-              <source media="(min-width: 200px)" srcSet={welcome_image_about} />
+              <source
+                media="(min-width: 200px)"
+                srcSet={welcome_image_about_url}
+              />
               <img
                 className="polaroidImage"
-                src={welcome_image_about}
+                src={welcome_image_about_url}
                 alt={welcome_image_about_description}
               ></img>
             </picture>
@@ -94,10 +97,13 @@ const Home = ({ data }) => {
           </div>
           <div className="rightHalf">
             <picture>
-              <source media="(min-width: 200px)" srcSet={welcome_image_food} />
+              <source
+                media="(min-width: 200px)"
+                srcSet={welcome_image_food_url}
+              />
               <img
                 className="polaroidImage"
-                src={welcome_image_food}
+                src={welcome_image_food_url}
                 alt={welcome_image_food_description}
               ></img>
             </picture>
@@ -144,30 +150,30 @@ const Home = ({ data }) => {
           </h2>
           <div className="leftHalf">
             <picture>
-              <source media="(min-width: 100px)" srcSet={family_image_1} />
+              <source media="(min-width: 100px)" srcSet={family_image_1_url} />
               <img
                 className="galleryImage"
-                src={family_image_1}
+                src={family_image_1_url}
                 alt={family_image_1_description}
               ></img>
             </picture>
           </div>
           <div className="rightHalf">
             <picture>
-              <source media="(min-width: 200px)" srcSet={family_image_2} />
+              <source media="(min-width: 200px)" srcSet={family_image_2_url} />
               <img
                 className="galleryImage"
-                src={family_image_2}
+                src={family_image_2_url}
                 alt={family_image_2_description}
               ></img>
             </picture>
           </div>
           <div className="leftHalf">
             <picture>
-              <source media="(min-width: 100px)" srcSet={family_image_3} />
+              <source media="(min-width: 100px)" srcSet={family_image_3_url} />
               <img
                 className="galleryImage galleryPosition"
-                src={family_image_3}
+                src={family_image_3_url}
                 alt={family_image_3_description}
               ></img>
             </picture>
