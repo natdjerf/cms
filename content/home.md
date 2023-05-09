@@ -26,16 +26,21 @@ section_favorites_griddle: A Tony burger straight off the griddle! Order as a
 section_favorites_beverages: Now serving a full bar! Beer, cocktails, and frozen
   specialities. And Coca Cola!
 welcome_image_about: https://res.cloudinary.com/dpanbsxt4/image/upload/v1671305089/Tonys/welcome_crop_kir9c6.png
+welcome_image_about_url: img/welcome_crop_kir9c6.png
 welcome_image_about_description: Polaroid of early restaurant days
-intro: Welcome to Tony's Clam Shop, a family owned local favorite that has been
-  serving fresh seafood on the South Shore for over 50 years.
 welcome_image_food: https://res.cloudinary.com/dpanbsxt4/image/upload/v1671305096/Tonys/finest_crop_oqhgjx.png
+welcome_image_food_url: img/finest_crop_oqhgjx.png
 welcome_image_food_description: Polaroid of restaurant on 20th anniversary
 family_image_1: https://res.cloudinary.com/dpanbsxt4/image/upload/v1671305235/Tonys/family_2_rr7xry.png
+family_image_1_url: img/family_2_rr7xry.png
 family_image_1_description: Kandalaft family - Tony, Tillie, Karen, Roy, Gary
 family_image_2: https://res.cloudinary.com/dpanbsxt4/image/upload/v1671305235/Tonys/family_4_khlihn.png
+family_image_2_url: img/family_4_khlihn.png
 family_image_2_description: Kandalaft family with manager Shawn and kitchen lead cook Hakim
 family_image_3: https://res.cloudinary.com/dpanbsxt4/image/upload/v1679241224/thethe_jido_slxj6t.png
+family_image_3_url: img/thethe_jido_slxj6t.png
+intro: Welcome to Tony's Clam Shop, a family owned local favorite that has been
+  serving fresh seafood on the South Shore for over 50 years.
 family_image_3_description: Tony and Tillie
 image: https://tonysclamshop.com/wp-content/uploads/2015/03/Tonys-BG-HDR-e1433614147945.jpg
 ---
