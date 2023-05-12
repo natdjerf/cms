@@ -3,4 +3,5 @@ image: https://res.cloudinary.com/dpanbsxt4/image/upload/v1671306606/Tonys/Broil
 name: Broiled Seafood
 title: Broiled Seafood
 category: plate
+image_url: img/broiledseafood.png
 ---
