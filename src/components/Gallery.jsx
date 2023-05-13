@@ -1,7 +1,6 @@
 import React from "react"
 
 const Gallery = props => {
-  console.log(props.content)
   const [config, setConfig] = React.useState({})
 
   const sections = {
