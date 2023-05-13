@@ -3,4 +3,5 @@ image: https://res.cloudinary.com/dpanbsxt4/image/upload/v1671306633/Tonys/Chick
 name: Chicken Kabob
 title: Chicken Kabob
 category: plate
+image_url: img/chickenkabobplate.png
 ---

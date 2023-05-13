@@ -3,4 +3,5 @@ image: https://res.cloudinary.com/dpanbsxt4/image/upload/v1681173482/Tonys/Strip
 name: Strip Plate
 title: Strip Plate
 category: plate
+image_url: img/stripplate.png
 ---
