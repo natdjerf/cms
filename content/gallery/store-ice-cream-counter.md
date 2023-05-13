@@ -3,4 +3,5 @@ image: https://res.cloudinary.com/dpanbsxt4/image/upload/v1679763378/2E763F6E-DF
 name: Ice cream counter
 title: Ice cream counter
 category: store
+image_url: img/oldicecreamcounter.jpeg
 ---
