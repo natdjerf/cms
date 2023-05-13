@@ -3,4 +3,5 @@ image: https://res.cloudinary.com/dpanbsxt4/image/upload/v1681173482/Tonys/Fish_
 name: Fish Plate
 title: Fish Plate
 category: plate
+image_url: img/fishplate.png
 ---

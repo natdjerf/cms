@@ -3,4 +3,5 @@ image: https://res.cloudinary.com/dpanbsxt4/image/upload/v1681173483/Tonys/Chick
 name: Chicken Finger Plate
 title: Chicken Finger Plate
 category: plate
+image_url: img/chickenfingerplate.png
 ---

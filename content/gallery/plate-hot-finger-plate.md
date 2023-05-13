@@ -3,4 +3,5 @@ image: https://res.cloudinary.com/dpanbsxt4/image/upload/v1681173479/Tonys/Hot_F
 name: Hot Finger Plate
 title: Hot Finger Plate
 category: plate
+image_url: img/hotfingerplate.png
 ---
