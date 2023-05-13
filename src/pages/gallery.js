@@ -27,7 +27,6 @@ export const query = graphql`
         childMarkdownRemark {
           frontmatter {
             category
-            image
             name
             title
             image_url
