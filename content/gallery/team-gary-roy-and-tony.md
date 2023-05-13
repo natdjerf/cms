@@ -3,4 +3,5 @@ image: https://res.cloudinary.com/dpanbsxt4/image/upload/v1679762780/EE2B12B5-00
 name: Gary, Roy, and Tony
 title: Gary, Roy, and Tony
 category: team
+image_url: img/garyroytony.jpeg
 ---
