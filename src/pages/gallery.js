@@ -30,6 +30,7 @@ export const query = graphql`
             image
             name
             title
+            image_url
           }
         }
       }

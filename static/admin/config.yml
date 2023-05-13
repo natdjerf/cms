@@ -178,6 +178,7 @@ collections:
           default: "plate, store, team",
           hint: "Select one from list- plate: round food photos, store: the shop, team: family and employees",
         }
+      - { label: Image url, name: image_url, widget: image }
   - label: "Menu"
     name: "menu"
     folder: "content/menu"

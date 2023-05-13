@@ -22,8 +22,7 @@ const Gallery = props => {
   React.useEffect(() => {
     props?.content?.forEach(node => {
       const imageNode = node?.childMarkdownRemark?.frontmatter
-
-      if (imageNode?.category && imageNode?.image && imageNode?.title) {
+      if (imageNode?.category && imageNode?.image_url && imageNode?.title) {
         if (sections[imageNode.category]) {
           sections[imageNode.category].items.push(imageNode)
         }
@@ -47,10 +46,13 @@ const Gallery = props => {
                 {value.items.map(item => (
                   <div key={item.title}>
                     <picture className={`${key}`}>
-                      <source media="(min-width: 200px)" srcSet="" />
+                      <source
+                        media="(min-width: 200px)"
+                        srcSet={`../${item.image_url}`}
+                      />
                       <img
                         className=""
-                        src={item?.image}
+                        src={`../${item.image_url}`}
                         alt={item?.title}
                       ></img>
                       <p>{item?.title}</p>
