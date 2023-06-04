@@ -17,7 +17,10 @@ export default MenuPage
 
 export const query = graphql`
   query Menu {
-    allFile(filter: { dir: { regex: "/menu|beverage/" } }) {
+    allFile(
+      filter: { dir: { regex: "/menu|beverage/" } }
+      sort: { fields: childMarkdownRemark___frontmatter___title }
+    ) {
       nodes {
         childMarkdownRemark {
           frontmatter {

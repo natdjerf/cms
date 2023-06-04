@@ -1,5 +1,5 @@
 ---
-category: plates
+category: lobster
 name: Lobster Roll
 title: Lobster Roll
 price: "32.95"

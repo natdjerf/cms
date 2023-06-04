@@ -1,6 +1,6 @@
 ---
 category: broiler
 name: Broiled Fish
-title: Broiled Fish
-price: '28.95'
+title: 2 - Broiled Fish
+price: "28.95"
 ---

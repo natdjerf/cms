@@ -14,6 +14,13 @@ const Menu = ({ data }) => {
   const [config, setConfig] = React.useState({ food: {}, beverage: {} })
 
   const sections = {
+    lobster: {
+      display_name: "Lobster Roll",
+      section_description: "Served with chips and a pickle spear",
+      additional_text: "",
+      one_size: true,
+      items: [],
+    },
     box: {
       display_name: "By the Box",
       section_description: "Prices are small, medium, and large boxes",
@@ -32,6 +39,13 @@ const Menu = ({ data }) => {
       display_name: "Plates",
       section_description: "Served with french fries and homemade coleslaw",
       additional_text: "Sweet potato fries available for additional fee",
+      one_size: true,
+      items: [],
+    },
+    favorites: {
+      display_name: "Favorites",
+      section_description: "",
+      additional_text: "",
       one_size: true,
       items: [],
     },
@@ -90,13 +104,6 @@ const Menu = ({ data }) => {
     kids: {
       display_name: "Kiddie Meals",
       section_description: "Served with kids french fries and soda",
-      additional_text: "",
-      one_size: true,
-      items: [],
-    },
-    favorites: {
-      display_name: "Favorites",
-      section_description: "",
       additional_text: "",
       one_size: true,
       items: [],

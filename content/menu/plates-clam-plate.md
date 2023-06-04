@@ -1,6 +1,6 @@
 ---
 category: plates
 name: Clam Plate
-title: Clam Plate
-price: 'M.P.'
+title: 2 - Clam Plate
+price: "M.P."
 ---

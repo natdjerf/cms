@@ -1,6 +1,6 @@
 ---
 category: plates
 name: Seafood Plate
-title: Seafood Plate
-price: 'M.P.'
+title: 1 Seafood Plate
+price: "M.P."
 ---
