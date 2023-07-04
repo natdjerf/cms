@@ -2,5 +2,5 @@
 category: plates
 name: Scallop Plate
 title: 3 - Scallop Plate
-price: "30.95"
+price: "32.95"
 ---
