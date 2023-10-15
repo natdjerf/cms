@@ -1,5 +1,5 @@
 ---
-message: Now open for our 59th season! 11am - 9pm. Hours may vary, please call
-  617-773-5090
+message: We are closing for the season Sunday night, October 22nd. See you in
+  the spring!
 active: true
 ---
