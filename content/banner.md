@@ -1,5 +1,4 @@
 ---
-message: We are closing for the season Sunday night, October 22nd. See you in
-  the spring!
+message: We are closed for the season! See you in the spring!
 active: true
 ---
