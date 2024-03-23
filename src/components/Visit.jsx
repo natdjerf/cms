@@ -1,7 +1,12 @@
 import React from "react"
 
 const Visit = ({ data }) => {
-  const { hours, phone = "" } = data
+  const { hours, open_for_the_season, seasons_open, phone = "" } = data
+  const openText =
+    seasons_open !== ""
+      ? `Now open for our ${seasons_open} season! We will be open every day ${hours}`
+      : `Now open! We will be open every day ${hours}`
+  const closedText = `We are closed for the season`
 
   return (
     <>
@@ -9,7 +14,7 @@ const Visit = ({ data }) => {
 
       <div className="flexColum alignCenter textCenter paddingTop40">
         <h3 className="h3 primaryColor">
-          {`Now open for our 59th season! We will be open every day ${hours}`}
+          {open_for_the_season ? openText : closedText}
         </h3>
         <p className="paddingTop20 paddingBottom20">
           Hours can vary, please call!&nbsp;

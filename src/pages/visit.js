@@ -31,6 +31,8 @@ export const query = graphql`
             email
             address_line_1
             address_line_2
+            seasons_open
+            open_for_the_season
           }
         }
       }
