@@ -2,5 +2,5 @@
 category: broiler
 name: Baked Stuffed Shrimp
 title: Baked Stuffed Shrimp
-price: '32.95'
+price: "29.95"
 ---

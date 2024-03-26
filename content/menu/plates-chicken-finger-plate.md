@@ -2,5 +2,5 @@
 category: plates
 name: Chicken Finger Plate
 title: Chicken Finger Plate
-price: '17.95'
+price: "19.95"
 ---

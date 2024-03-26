@@ -2,5 +2,5 @@
 category: griddle
 name: Tuna Melt
 title: Tuna Melt
-price: '9.95'
+price: "10.95"
 ---

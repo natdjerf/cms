@@ -2,5 +2,5 @@
 category: griddle
 name: Pepperburger
 title: Pepperburger
-price: '7.45'
+price: "8.45"
 ---
