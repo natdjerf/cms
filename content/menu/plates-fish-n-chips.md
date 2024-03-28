@@ -2,5 +2,5 @@
 category: plates
 name: Fish n Chips
 title: 4 - Fish n Chips
-price: "21.95"
+price: "22.95"
 ---

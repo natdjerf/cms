@@ -1,6 +1,6 @@
 ---
-category: salads
+category: speciality_salads
 name: Garden Salad with Fresh Lobster
 title: Garden Salad with Fresh Lobster
-price: '31.95'
+price: "31.95"
 ---

@@ -1,6 +1,6 @@
 ---
-category: salads
+category: speciality_salads
 name: Garden Salad with Grilled Shrimp
 title: Garden Salad with Grilled Shrimp
-price: '23.95'
+price: "23.95"
 ---

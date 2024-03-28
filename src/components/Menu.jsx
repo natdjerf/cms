@@ -86,6 +86,14 @@ const Menu = ({ data }) => {
       one_size: true,
       items: [],
     },
+    speciality_salads: {
+      display_name: "Speciality Salads",
+      section_description:
+        "Choice of Italian, oil and vinegar, Greek, ranch, caesar, balsamic vinaigrette, or blue cheese dressing",
+      additional_text: "",
+      one_size: true,
+      items: [],
+    },
     salads: {
       display_name: "Salads",
       section_description:
@@ -133,6 +141,18 @@ const Menu = ({ data }) => {
     },
     liquor: {
       display_name: "Liquor",
+      items: [],
+    },
+    lime_rickeys: {
+      display_name: "Lime Rickeys",
+      items: [],
+    },
+    soda: {
+      display_name: "Fountain Soda",
+      items: [],
+    },
+    bottled: {
+      display_name: "Bottled",
       items: [],
     },
   }
