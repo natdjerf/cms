@@ -154,7 +154,7 @@ const Menu = ({ data }) => {
       items: [],
     },
     soda: {
-      display_name: "Fountain Soda & Hot",
+      display_name: "Fountain Soda, Juice, Hot",
       items: [],
     },
     bottled: {
