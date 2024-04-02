@@ -1,6 +1,6 @@
 ---
-category: wraps
+category: clubs
 name: Turkey Club
 title: Turkey Club
-price: "12.95"
+price: "13.95"
 ---

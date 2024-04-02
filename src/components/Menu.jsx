@@ -56,19 +56,41 @@ const Menu = ({ data }) => {
       one_size: true,
       items: [],
     },
-    sandwiches: {
-      display_name: "Deli Sandwiches",
-      section_description: "Served with chips and a pickle spear",
-      additional_text:
-        "Choice of deli roll, white bread, wheat bread, or Syrian pocket",
+    speciality_salads: {
+      display_name: "Speciality Salads",
+      section_description:
+        "Choice of Italian, oil and vinegar, Greek, ranch, caesar, balsamic vinaigrette, or blue cheese dressing",
+      additional_text: "",
+      one_size: true,
+      items: [],
+    },
+    salads: {
+      display_name: "Salads",
+      section_description:
+        "Choice of Italian, oil and vinegar, Greek, ranch, caesar, balsamic vinaigrette, or blue cheese dressing",
+      additional_text: "",
       one_size: true,
       items: [],
     },
     griddle: {
       display_name: "Off the Griddle",
       section_description:
-        "Order as a platter to add french fries and coleslaw",
+        "Order as a platter to add french fries and coleslaw - $7",
       additional_text: "",
+      one_size: true,
+      items: [],
+    },
+    sandwiches: {
+      display_name: "Deli Sandwiches",
+      section_description: "Served with chips and a pickle spear",
+      additional_text: "Choice of white bread or wheat bread",
+      one_size: true,
+      items: [],
+    },
+    clubs: {
+      display_name: "Clubs",
+      section_description: "Served with chips and a pickle spear",
+      additional_text: "Choice of white bread or wheat bread",
       one_size: true,
       items: [],
     },
@@ -82,22 +104,6 @@ const Menu = ({ data }) => {
     subs: {
       display_name: "Subs",
       section_description: "Served with chips and a pickle spear",
-      additional_text: "",
-      one_size: true,
-      items: [],
-    },
-    speciality_salads: {
-      display_name: "Speciality Salads",
-      section_description:
-        "Choice of Italian, oil and vinegar, Greek, ranch, caesar, balsamic vinaigrette, or blue cheese dressing",
-      additional_text: "",
-      one_size: true,
-      items: [],
-    },
-    salads: {
-      display_name: "Salads",
-      section_description:
-        "Choice of Italian, oil and vinegar, Greek, ranch, caesar, balsamic vinaigrette, or blue cheese dressing",
       additional_text: "",
       one_size: true,
       items: [],
@@ -148,7 +154,7 @@ const Menu = ({ data }) => {
       items: [],
     },
     soda: {
-      display_name: "Fountain Soda",
+      display_name: "Fountain Soda & Hot",
       items: [],
     },
     bottled: {
