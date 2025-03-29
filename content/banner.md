@@ -1,4 +1,4 @@
 ---
-message: Closing for the season on Sunday, October 27th!
+message: We are getting ready to open for the season, check back soon!
 active: true
 ---
