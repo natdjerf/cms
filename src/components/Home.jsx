@@ -35,7 +35,7 @@ const Home = ({ data }) => {
     family_image_2_description,
     family_image_3_url,
     family_image_3_description,
-  } = data
+  } = data || {}
   return (
     <>
       <section className="section landing fullvW">
