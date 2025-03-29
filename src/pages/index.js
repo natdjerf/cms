@@ -2,15 +2,30 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import Home from "../components/Home"
+
+export const Head = props => {
+  const data = props?.data?.allFile?.nodes[0]?.childMarkdownRemark?.frontmatter
+  const title = data?.title
+  const description = data?.description
+
+  return (
+    <>
+      <html lang="en" />
+      <title>{title}</title>
+      <meta name="description" content={description}></meta>
+      <meta property="og:title" content={title}></meta>
+      <meta property="og:description" content={description}></meta>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    </>
+  )
+}
 
 const IndexPage = props => {
   const data = props?.data?.allFile?.nodes[0]?.childMarkdownRemark?.frontmatter
 
   return (
     <Layout>
-      <Seo title="Home" />
       <Home data={data}></Home>
     </Layout>
   )

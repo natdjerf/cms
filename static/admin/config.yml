@@ -14,6 +14,7 @@ collections:
         file: "content/home.md"
         fields:
           - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
           - {
               label: Hours,
               name: hours,

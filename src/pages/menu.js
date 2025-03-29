@@ -19,7 +19,7 @@ export const query = graphql`
   query Menu {
     allFile(
       filter: { dir: { regex: "/menu|beverage/" } }
-      sort: { fields: childMarkdownRemark___frontmatter___title }
+      sort: { childMarkdownRemark: { frontmatter: { title: ASC } } }
     ) {
       nodes {
         childMarkdownRemark {
