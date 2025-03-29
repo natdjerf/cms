@@ -1,9 +1,8 @@
 import React, { useState } from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import Logo from "../images/logo.inline.svg"
-import Hamburger from "../images/hamburger.inline.svg"
-import Close from "../images/close.inline.svg"
+import Logo from "./icons/logo"
+import Hamburger from "./icons/hamburger"
+import Close from "./icons/close"
 
 import "./layout.css"
 
@@ -94,14 +93,6 @@ const Header = () => {
       </div>
     </>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

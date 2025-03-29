@@ -1,6 +1,4 @@
 import React from "react"
-import Tripadvisor from "../images/tripadvisor.inline.svg"
-import Facebook from "../images/facebook.inline.svg"
 
 const Banner = ({ data }) => {
   const { message } = data

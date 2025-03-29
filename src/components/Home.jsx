@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import Shrimp from "../images/shrimp.inline.svg"
-import Fries from "../images/fries.inline.svg"
-import Burger from "../images/burger.inline.svg"
-import Cutlery from "../images/cutlery.inline.svg"
-import Beer from "../images/beer.inline.svg"
-import Soda from "../images/soda.inline.svg"
+import Shrimp from "./icons/shrimp.jsx"
+import Fries from "./icons/fries.jsx"
+import Burger from "./icons/burger.jsx"
+import Cutlery from "./icons/cutlery.jsx"
+import Beer from "./icons/beer.jsx"
+import Soda from "./icons/soda.jsx"
 
 const Home = ({ data }) => {
   const {

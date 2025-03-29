@@ -6,7 +6,6 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "@fontsource/raleway/400.css"
 import "@fontsource/raleway/800.css"
@@ -73,8 +72,6 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+
 
 export default Layout

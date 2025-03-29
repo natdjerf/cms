@@ -1,6 +1,6 @@
 import React from "react"
-import Tripadvisor from "../images/tripadvisor.inline.svg"
-import Facebook from "../images/facebook.inline.svg"
+import Tripadvisor from "./icons/tripadvisor"
+import Facebook from "./icons/facebook"
 
 const Footer = ({ data }) => {
   const { phone = "", email, address_line_1, address_line_2 } = data
