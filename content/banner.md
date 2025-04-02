@@ -1,4 +1,4 @@
 ---
-message: We are getting ready to open for the season, check back soon!
+message: We will be opening for the season on April 3rd!
 active: true
 ---
