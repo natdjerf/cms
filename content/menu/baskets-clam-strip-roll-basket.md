@@ -2,5 +2,5 @@
 category: baskets
 name: Clam Strip Roll Basket
 title: Clam Strip Roll Basket
-price: "18.95"
+price: "20.95"
 ---

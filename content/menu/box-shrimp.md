@@ -2,7 +2,7 @@
 category: box
 name: Shrimp
 title: Shrimp
-small_price: "19.95"
-medium_price: "29.95"
-large_price: "46.95"
+small_price: "21.95"
+medium_price: "32.95"
+large_price: "49.95"
 ---

@@ -2,5 +2,5 @@
 category: wraps
 name: Chipotle Chicken
 title: Chipotle Chicken
-price: "12.95"
+price: "14.95"
 ---

@@ -2,5 +2,5 @@
 category: plates
 name: Seafood Plate
 title: 1 Seafood Plate
-price: "39.95"
+price: "41.95"
 ---

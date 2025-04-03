@@ -2,5 +2,5 @@
 category: wraps
 name: Vegetarian
 title: Vegetarian
-price: "12.95"
+price: "14.95"
 ---

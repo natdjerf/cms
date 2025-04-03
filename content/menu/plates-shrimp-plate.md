@@ -2,5 +2,5 @@
 category: plates
 name: Shrimp Plate
 title: Shrimp Plate
-price: "26.95"
+price: "28.95"
 ---

@@ -2,5 +2,5 @@
 category: griddle
 name: Double Cheeseburger
 title: Double Cheeseburger
-price: "14.95"
+price: "15.95"
 ---

@@ -2,5 +2,5 @@
 category: wraps
 name: Falafel
 title: Falafel
-price: "12.95"
+price: "14.95"
 ---

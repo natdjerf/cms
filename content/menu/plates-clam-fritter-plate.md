@@ -2,5 +2,5 @@
 category: plates
 name: Clam Fritter Plate
 title: Clam Fritter Plate
-price: '16.95'
+price: "17.95"
 ---

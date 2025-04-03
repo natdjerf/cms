@@ -2,5 +2,5 @@
 category: subs
 name: Turkey
 title: Turkey
-price: "12.95"
+price: "14.95"
 ---

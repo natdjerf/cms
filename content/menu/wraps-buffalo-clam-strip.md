@@ -2,5 +2,5 @@
 category: wraps
 name: Buffalo Clam Strip
 title: Buffalo Clam Strip
-price: "12.95"
+price: "14.95"
 ---

@@ -2,5 +2,5 @@
 category: subs
 name: Tuna
 title: Tuna
-price: "12.95"
+price: "14.95"
 ---

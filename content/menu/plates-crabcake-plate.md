@@ -2,5 +2,5 @@
 category: plates
 name: Crabcake Plate
 title: Crabcake Plate
-price: "26.95"
+price: "27.95"
 ---

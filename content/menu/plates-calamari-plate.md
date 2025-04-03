@@ -2,5 +2,5 @@
 category: plates
 name: Calamari Plate
 title: Calamari Plate
-price: "25.95"
+price: "26.95"
 ---

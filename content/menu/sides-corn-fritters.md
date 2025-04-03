@@ -2,5 +2,5 @@
 category: sides
 name: Corn Fritters
 title: Corn Fritters
-price: "11.95"
+price: "12.95"
 ---

@@ -2,5 +2,5 @@
 category: plates
 name: Oyster Plate
 title: Oyster Plate
-price: "28.95"
+price: "30.95"
 ---

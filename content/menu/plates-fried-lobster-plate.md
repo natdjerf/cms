@@ -2,5 +2,5 @@
 category: plates
 name: Fried Lobster Plate
 title: Fried Lobster Plate
-price: "33.95"
+price: "35.95"
 ---

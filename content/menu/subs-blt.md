@@ -2,5 +2,5 @@
 category: subs
 name: BLT
 title: BLT
-price: "12.95"
+price: "14.95"
 ---

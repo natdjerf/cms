@@ -2,5 +2,5 @@
 category: plates
 name: Fish Plate
 title: Fish Plate
-price: "24.95"
+price: "26.95"
 ---

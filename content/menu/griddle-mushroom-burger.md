@@ -2,5 +2,5 @@
 category: griddle
 name: Mushroom Burger
 title: Mushroom Burger
-price: "8.45"
+price: "9.25"
 ---
