@@ -1,6 +1,6 @@
 ---
 title: Tony's Clam Shop
-hours: 11:00am to 9:00pm
+hours: Monday - Thursday 11:00am to 8:00pm, Friday & Saturday 11:00am to 9:00pm
 hours_description: Open daily
 open_for_the_season: true
 seasons_open: 60th
