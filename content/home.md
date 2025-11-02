@@ -2,7 +2,7 @@
 title: Tony's Clam Shop
 hours: Monday - Thursday 11:00am to 8:00pm, Friday & Saturday 11:00am to 9:00pm
 hours_description: Open daily
-open_for_the_season: true
+open_for_the_season: false
 seasons_open: 60th
 address_line_1: 861 Quincy Shore Drive
 address_line_2: Quincy MA 02170
