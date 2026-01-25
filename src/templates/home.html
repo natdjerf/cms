@@ -1,0 +1,112 @@
+<section class="section landing fullvW">
+  <div class="flex justifyCenter paddingTop80m30d">
+    <h1 class="h1 textCenter">Tony's Clam Shop</h1>
+  </div>
+</section>
+
+<section class="section paddingTop120 paddingBottom120 width100">
+  <div class="grid textCenter">
+    <div class="leftThird">
+      <h3 class="h3">Hours</h3>
+      <p>{{hours_description}}</p>
+      <p>{{hours}}</p>
+    </div>
+    <div class="centerThird">
+      <h3 class="h3">Location</h3>
+      <address class="normal">
+        <p>{{address_line_1}}</p>
+        <p>{{address_line_2}}</p>
+      </address>
+    </div>
+    <div class="rightThird">
+      <h3 class="h3">Contact</h3>
+      <a class="block primary" href="mailto:{{email}}">{{email}}</a>
+      <a class="block primary" href="tel:{{phone_clean}}">{{phone}}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section paddingTop60 background">
+  <div class="grid alignCenter textCenter textLeftMedia">
+    <div class="leftHalf orderMedia">
+      <picture>
+        <source media="(min-width: 200px)" srcset="{{welcome_image_about_url}}">
+        <img class="polaroidImage" src="{{welcome_image_about_url}}" alt="{{welcome_image_about_description}}">
+      </picture>
+    </div>
+    <div class="rightHalfCenter">
+      <h2 class="h2">{{section_welcome_header}}</h2>
+      <p class="paddingTop30">{{section_welcome_text}}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section paddingTop60 paddingBottom60 background">
+  <div class="grid alignCenter textCenter textLeftMedia">
+    <div class="leftHalfCenter">
+      <h2 class="h2">{{section_food_header}}</h2>
+      <p class="paddingTop30">{{section_food_text}}</p>
+    </div>
+    <div class="rightHalf">
+      <picture>
+        <source media="(min-width: 200px)" srcset="{{welcome_image_food_url}}">
+        <img class="polaroidImage" src="{{welcome_image_food_url}}" alt="{{welcome_image_food_description}}">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="section paddingTop60 textCenter">
+  <div class="grid smallGap">
+    <h2 class="h2 fullWidth paddingTop40">{{section_favorites_header}}</h2>
+    <div class="leftThird">
+      <div class="flex justifyCenter paddingTop60">
+        <img src="/img/shrimp.svg" alt="" role="presentation">
+        <img src="/img/fries.svg" alt="" role="presentation" class="marginIcon">
+      </div>
+      <p class="paddingTop30">{{section_favorites_seafood}}</p>
+    </div>
+    <div class="centerThird">
+      <div class="flex justifyCenter paddingTop60">
+        <img src="/img/burger.svg" alt="" role="presentation" class="marginIcon">
+        <img src="/img/cutlery.svg" alt="" role="presentation">
+      </div>
+      <p class="paddingTop30">{{section_favorites_griddle}}</p>
+    </div>
+    <div class="rightThird">
+      <div class="flex justifyCenter paddingTop60">
+        <img src="/img/beer.svg" alt="" role="presentation">
+        <img src="/img/soda.svg" alt="" role="presentation" class="marginIcon">
+      </div>
+      <p class="paddingTop30">{{section_favorites_beverages}}</p>
+    </div>
+    <div class="fullWidth textCenter extraBold upperCase paddingTop30">
+      <a class="link primaryColor" href="/menu">View Menu</a>
+    </div>
+  </div>
+</section>
+
+<section class="section paddingTop60 paddingBottom40">
+  <div class="grid alignCenter">
+    <h2 class="h2 fullWidth textCenter paddingTop40">{{section_family_header}}</h2>
+    <div class="leftHalf">
+      <picture>
+        <source media="(min-width: 100px)" srcset="{{family_image_1_url}}">
+        <img class="galleryImage" src="{{family_image_1_url}}" alt="{{family_image_1_description}}">
+      </picture>
+    </div>
+    <div class="rightHalf">
+      <picture>
+        <source media="(min-width: 200px)" srcset="{{family_image_2_url}}">
+        <img class="galleryImage" src="{{family_image_2_url}}" alt="{{family_image_2_description}}">
+      </picture>
+    </div>
+    <div class="leftHalf">
+      <picture>
+        <source media="(min-width: 100px)" srcset="{{family_image_3_url}}">
+        <img class="galleryImage galleryPosition" src="{{family_image_3_url}}" alt="{{family_image_3_description}}">
+      </picture>
+    </div>
+    <p class="rightHalf textCenter textLeftMedia">{{section_family_text}}</p>
+  </div>
+</section>

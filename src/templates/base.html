@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="icon" type="image/png" href="/img/gatsby-icon.png">
+</head>
+<body>
+  <div class="layout relative">
+    {{banner}}
+    <header class="header sticky paddingTop30 paddingMin">
+      <nav>
+        <div class="flex alignCenter justifySpaceBetween desktopOnly">
+          <div class="flex">
+            <a href="/">
+              <img src="/img/logo.svg" alt="Tony's Clam Shop" class="logoIcon">
+            </a>
+          </div>
+          <div class="flex justifyEnd upperCase extraBold marginNavOffset">
+            <a class="link primary marginNav" href="/menu">Menu</a>
+            <a class="link primary marginNav" href="/visit">Visit</a>
+            <a class="link primary marginNav" href="/gallery">Gallery</a>
+            <a class="link primary marginNav" href="/press">Press</a>
+          </div>
+        </div>
+        <div class="mobileOnly flex justifySpaceBetween">
+          <div class="flex">
+            <a href="/">
+              <img src="/img/logo.svg" alt="Tony's Clam Shop" class="logoIconSmall">
+            </a>
+          </div>
+          <button class="transparent noBorder" id="mobileMenuOpen" aria-label="Open menu">
+            <img src="/img/hamburger.svg" alt="" class="hamburgerIcon fillPrimary">
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobileMenu fullvW fullVh absolute top base zMenu hidden">
+      <div class="flexColumn paddingTop30 paddingMin">
+        <button class="transparent noBorder alignSelfEnd" id="mobileMenuClose" aria-label="Close menu">
+          <img src="/img/close.svg" alt="" class="closeIcon">
+        </button>
+        <div class="upperCase extraBold flexColumn">
+          <div class="paddingTop20"><a class="link primary marginNav" href="/">Home</a></div>
+          <div class="paddingTop20"><a class="link primary marginNav" href="/menu">Menu</a></div>
+          <div class="paddingTop20"><a class="link primary marginNav" href="/visit">Visit</a></div>
+          <div class="paddingTop20"><a class="link primary marginNav" href="/gallery">Gallery</a></div>
+          <div class="paddingTop20"><a class="link primary marginNav" href="/press">Press</a></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main flexColumn alignCenter">
+      {{content}}
+    </main>
+
+    <footer class="footer background paddingTop60 paddingBottom60 alignCenter textCenter textLeftMedia">
+      <div class="grid">
+        <div class="firstQuarter">
+          <h4 class="h4">Contact</h4>
+          <address class="normal">
+            <p>{{address_line_1}}</p>
+            <p>{{address_line_2}}</p>
+          </address>
+        </div>
+        <div class="secondQuarter">
+          <h4 class="h4">Visit</h4>
+          <a class="block primary" href="mailto:{{email}}">{{email}}</a>
+          <a class="block primary" href="tel:{{phone_clean}}">{{phone}}</a>
+        </div>
+        <div class="thirdQuarter">
+          <h4>Jobs</h4>
+          <a class="primary" target="_blank" rel="noopener noreferrer" href="/img/application.pdf">
+            Application
+          </a>
+        </div>
+        <div class="fourthQuarter">
+          <div class="smallGrid">
+            <a aria-label="Tripadvisor reviews" class="primary" target="_blank" rel="noopener noreferrer"
+               href="https://www.tripadvisor.com/Restaurant_Review-g60710-d1208586-Reviews-Tony_s_Clam_Shop-Quincy_Massachusetts.html">
+              <img src="/img/tripadvisor.svg" alt="TripAdvisor">
+            </a>
+            <a aria-label="Facebook profile" class="primary" target="_blank" rel="noopener noreferrer"
+               href="https://www.facebook.com/Tonys-Clam-Shop-120180677994652/">
+              <img src="/img/facebook.svg" alt="Facebook">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="grid paddingTop40">
+        <div class="firstQuarter bodyXSmall">
+          <p>Website: Natalie Djerf</p>
+          <p>Icons: <a class="primary" href="https://thenounproject.com/browse/collection-icon/food-doodles-32080"
+             target="_blank" rel="noopener noreferrer">Kate Maldjian Noun Project</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenu = document.getElementById('mobileMenu');
+    const openBtn = document.getElementById('mobileMenuOpen');
+    const closeBtn = document.getElementById('mobileMenuClose');
+    
+    openBtn?.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('block');
+    });
+    
+    closeBtn?.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('block');
+    });
+  </script>
+</body>
+</html>
