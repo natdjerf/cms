@@ -1,0 +1,42 @@
+/* Layout Grid - Flexible structure */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  flex-shrink: 0;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+/* Section-specific grid areas (optional, for specific pages) */
+.landing {
+  grid-area: landing;
+}
+.hours {
+  grid-area: hours;
+}
+.welcome {
+  grid-area: welcome;
+}
+.finest {
+  grid-area: finest;
+}
+.favorites {
+  grid-area: favorites;
+}
+.family {
+  grid-area: family;
+}
