@@ -54,7 +54,10 @@ typings/
 # dotenv environment variable files
 .env*
 
-# gatsby files
+# Build output
+dist/
+
+# Gatsby files (legacy)
 .cache/
 public
 
