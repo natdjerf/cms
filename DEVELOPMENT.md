@@ -52,11 +52,34 @@ cms/
 │   ├── menu/               # Menu collection (120 items)
 │   └── beverages/          # Beverages collection (9 items)
 ├── scripts/
-│   ├── build.js            # Static site generator
+│   ├── build.js            # Main build orchestration
 │   ├── dev.js              # Dev server with live reload
-│   └── serve.js            # Simple production preview server
+│   ├── serve.js            # Simple production preview server
+│   ├── config/             # Section configurations
+│   │   ├── menu.js         # Menu section names & descriptions
+│   │   ├── beverages.js    # Beverage section names
+│   │   └── gallery.js      # Gallery section names
+│   ├── generators/         # HTML generation functions
+│   │   ├── menu.js         # Menu section HTML
+│   │   ├── beverages.js    # Beverage section HTML
+│   │   ├── gallery.js      # Gallery section HTML
+│   │   ├── banner.js       # Banner HTML
+│   │   └── visit.js        # Visit status text
+│   └── utils/              # Shared utilities
+│       ├── files.js        # File reading (YAML, collections)
+│       └── template.js     # Template rendering
 ├── src/
 │   ├── templates/          # HTML templates with {{placeholders}}
+│   │   ├── partials/       # Reusable HTML snippets
+│   │   │   ├── menu-section.html
+│   │   │   ├── menu-item.html
+│   │   │   ├── beverage-section.html
+│   │   │   ├── gallery-section.html
+│   │   │   └── banner.html
+│   │   ├── base.html       # Main layout
+│   │   ├── home.html       # Home page
+│   │   ├── menu.html       # Menu page
+│   │   └── ...             # Other pages
 │   ├── css/                # Stylesheets
 │   └── fonts/              # Custom fonts
 ├── static/                 # Static assets (images, etc.)
@@ -70,11 +93,20 @@ cms/
 
 ### Static Site Build
 
-1. `scripts/build.js` reads YAML content from `content/`
-2. Parses YAML using the `yaml` package
-3. Renders HTML templates from `src/templates/`
-4. Replaces `{{placeholder}}` variables with content
-5. Copies assets (images, CSS, fonts) to `dist/`
+1. `scripts/build.js` orchestrates the build process
+2. `scripts/utils/files.js` reads YAML content from `content/`
+3. `scripts/generators/*.js` create HTML for dynamic sections (menu, gallery, etc.)
+4. `scripts/utils/template.js` renders HTML templates with `{{placeholder}}` syntax
+5. Assets (images, CSS, fonts) are copied to `dist/`
+
+### Build Script Architecture
+
+The build system is modular for easy maintenance:
+
+- **config/** - Section definitions (names, descriptions). Edit these to change menu categories.
+- **generators/** - HTML generation. Edit these to change how sections are rendered.
+- **utils/** - Shared code for file reading and template rendering.
+- **templates/partials/** - HTML snippets. Edit these to change markup structure.
 
 ### CMS Admin
 
@@ -121,6 +153,27 @@ Build command: `npm run build`
 Publish directory: `dist`
 
 The site is fully static - no server required.
+
+## Common Edits
+
+### Change a menu section name or description
+Edit `scripts/config/menu.js`:
+```javascript
+plates: {
+  display_name: 'Plates',  // Change display name here
+  section_description: 'Served with french fries...',  // Change description here
+},
+```
+
+### Change menu item HTML structure
+Edit `src/templates/partials/menu-item.html`:
+```html
+<p class="paddingTop8">{{name}}{{price}}</p>
+```
+
+### Add a new menu category
+1. Add entry to `scripts/config/menu.js`
+2. Create YAML files in `content/menu/` with matching `category` value
 
 ## Notes
 
