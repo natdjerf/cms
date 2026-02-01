@@ -175,6 +175,7 @@ const dev = async () => {
     path.join(ROOT, 'content'),
     path.join(ROOT, 'src'),
     path.join(ROOT, 'static'),
+    path.join(ROOT, 'scripts'),
   ], {
     ignored: /node_modules/,
     persistent: true,
