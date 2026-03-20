@@ -1,4 +1,5 @@
 ---
-message: Thank you for a great season! See you in the spring.
+message: HELP WANTED! Please download our application and email to
+  tonysclamshop@gmail.com
 active: true
 ---
