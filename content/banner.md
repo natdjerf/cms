@@ -1,5 +1,4 @@
 ---
-message: HELP WANTED! Please download our application and email to
-  tonysclamshop@gmail.com
+message: Now Open!
 active: true
 ---
