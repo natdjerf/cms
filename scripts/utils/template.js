@@ -76,9 +76,10 @@ export const renderPage = async (templateName, data, layoutData = {}) => {
   const renderedContent = render(template, normalizedData);
   
   const baseTemplate = await readTemplate('base');
+  // layoutData is spread LAST so page-specific title/description override content data
   return render(baseTemplate, {
-    ...layoutData,
     ...normalizedData,
+    ...layoutData,
     content: renderedContent,
     phone_clean: (normalizedData.phone || '').replace(/-/g, ''),
   });
