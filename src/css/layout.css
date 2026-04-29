@@ -7,7 +7,7 @@
   --base: #fff;
   --primary: #223a41;
   --primary-color: #f16a36;
-  --secondary: #5aa1fb;
+  --secondary: #afd7d7;
   --headerMargin: 30px;
   --headerMarginOffset: -30px;
 }
@@ -89,6 +89,10 @@ body {
   margin-top: 20px;
 }
 
+.paddingBanner {
+  padding: 5px 5%;
+}
+
 .landing {
   background: linear-gradient(
       to bottom,
@@ -98,7 +102,7 @@ body {
     url("/img/landing_crop_oaupqt.png");
   background-size: cover;
   background-position: 15%;
-  margin-top: -84px; /* margin top 30px+ nav height 54px */
+  margin-top: -72px; /* margin top 30px+ nav height 42px */
   min-height: 90vh;
 }
 
@@ -126,10 +130,6 @@ body {
 
 .marginBottom60 {
   margin-bottom: 60px;
-}
-
-.paddingBanner {
-  padding: 5px 5%;
 }
 
 .paddingBottom20 {
@@ -444,9 +444,7 @@ body {
     padding: 5px 5%;
   }
 
-  .paddingTop80m30d {
-    padding-top: 30px;
-  }
+
   /* Text */
 
   .textLeftMedia {
