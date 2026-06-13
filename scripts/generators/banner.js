@@ -1,3 +1,4 @@
+import { marked } from 'marked';
 import { readPartial, render } from '../utils/template.js';
 
 /**
@@ -10,6 +11,6 @@ export const generateBanner = async (bannerData) => {
   
   const template = await readPartial('banner');
   return render(template, {
-    message: bannerData.message,
+    message: marked.parseInline(bannerData.message),
   });
 };
