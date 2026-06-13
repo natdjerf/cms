@@ -189,11 +189,6 @@ body {
   padding-top: 120px;
 }
 
-.pressIframe {
-  height: 157.5px;
-  width: 265px;
-}
-
 .fullvW {
   width: 100vw;
 }
@@ -216,6 +211,35 @@ body {
 
 .width100 {
   width: 100%;
+}
+
+.maxWidth100 {
+  max-width: 100%;
+}
+
+.minWidth0 {
+  min-width: 0;
+}
+
+.marginInlineAuto {
+  margin-inline: auto;
+}
+
+.maxWidth1080 {
+  max-width: 1080px;
+}
+
+.overflowWrapAnywhere {
+  overflow-wrap: anywhere;
+}
+
+.wordBreak {
+  word-break: break-word;
+}
+
+.aspectVideo {
+  aspect-ratio: 16 / 9;
+  height: auto;
 }
 
 .embeddedMap {
@@ -245,6 +269,10 @@ body {
 
 .alignCenter {
   align-items: center;
+}
+
+.alignStart {
+  align-items: flex-start;
 }
 
 .alignSelfEnd {
@@ -285,6 +313,10 @@ body {
 
 .galleryGrid {
   display: grid;
+}
+
+.colMin1 {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .plateGrid {
@@ -481,6 +513,16 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .colMin2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .subgridRow2 {
+    display: grid;
+    grid-row: span 2;
+    grid-template-rows: subgrid;
+  }
+
   .first {
     order: unset;
   }
@@ -617,9 +659,8 @@ body {
     width: 582px;
   }
 
-  .pressIframe {
-    height: 315px;
-    width: 530px;
+  .maxWidth530 {
+    max-width: 530px;
   }
 }
 
